@@ -21,8 +21,6 @@
     sizes="132x132"
     href="/images/cycler1-.png"/>
 
-    
-
 
 
   </head>
@@ -37,16 +35,16 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="/" class="navbar__links" class ="btn-active">Home</a>
+            <a href="index.html" class="navbar__links" class ="btn-active">Home</a>
           </li>
           <li class="navbar__item">
-            <a href="tech.html" class="navbar__links">About Us</a>
+            <a href="about.html" class="navbar__links">About Us</a>
           </li>
           <li class="navbar__item">
-            <a href="/" class="navbar__links">Services</a>
+            <a href="services.html" class="navbar__links">Services</a>
           </li>
           <li class="navbar__item">
-            <a href="/" class="navbar__links">Contact Us</a>
+            <a href="contact.html" class="navbar__links">Contact Us</a>
           </li>
 
         </ul>
@@ -69,8 +67,8 @@
           <p>Audio Recording, Mixing, Editing, mastering, Live Session ................</p>
           <button class="main__btn"><a href="#">Book An Appointment</a></button>
         </div>
-        <div class="main__img--container">
-          <img id="main__img" src="images/compressed-mic.png" />
+        <div class="main__img--container wave">
+          <img class = "single-wave" id="main__img" src="images/compressed-mic.png" />
 
           
         </div>
@@ -236,43 +234,67 @@
       <h2 class="work-and-client-header">
           Our Projects
       </h2>
-       <!-- <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.
+       <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit.
          Explicabo porro magni natus ullam, 
        <br> quia similique dolore enim <br>inventore nulla ea ratione 
-        veniam modi numquam minima v<br>eritatis ipsa a corrupti odit!</p>  -->
+        veniam modi numquam minima v<br>eritatis ipsa a corrupti odit!</p> 
   </div>
 
   <div class="work-sample-grid">
       <div class="grid-cointainer">
           <div class="grid-item">
               <img src="./images/loop.png" alt="">
+              <div class="img-text">
+                <div class="cont">
               <h4>David Roger Music Concert</h4>
               <p>Event Management</p>
+              </div>
+              </div>
           </div>
           <div class="grid-item">
               <img src="./images/loop.png" alt="">
+              <div class="img-text">
+                <div class="cont">
               <h4>The Loop Hall</h4>
               <p>Video Production</p>
+              </div>
+              </div>
           </div>
           <div class="grid-item">
               <img src="./images/loop.png" alt="">
+              <div class="img-text">
+                <div class="cont">
               <h4>Ben Stokes - Battle</h4>
               <p>Sound Mixing</p>
+              </div>
+              </div>
           </div>
           <div class="grid-item">
               <img src="./images/loop.png" alt="">
+              <div class="img-text">
+                <div class="cont">
               <h4>Shaile Doe John</h4>
               <p>Photoshoot</p>
+              </div>
+              </div>
           </div>
           <div class="grid-item">
               <img src="./images/loop.png" alt="">
+              <div class="img-text">
+                <div class="cont">
               <h4>Jazz Night Cocert</h4>
               <p>Event Management</p>
+              </div>
+              </div>
           </div>
           <div class="grid-item">
               <img src="./images/loop.png" alt="">
+              <div class="img-text">
+                <div class="cont">
               <h4>Robert  Flemming</h4>
               <p>Photoshoot</p>
+              </div>
+              </div>
           </div>
       </div>
   </div>
@@ -527,6 +549,13 @@
   </div>
 </section>
 
+<section>
+  <div class="client">
+  </div>
+
+
+</section>
+
     <!-- Footer Section -->
     <footer>
     <div class="footer__container">
@@ -609,7 +638,12 @@
   </footer>
     
     <script src="app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+    </script>
   </body>
 </html>
+
+
