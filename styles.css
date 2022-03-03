@@ -16,88 +16,6 @@ img {
   width: 100%;
 }
 
-
-.js-scroll{
-    opacity: 0;
-    transform: translateX(-150px);
-}
-
-.js-scroll.scrolled{
-    opacity: 1;
-}
-
-.scrolled.slide-up{
-    animation: slide-in-up 1s ease-in-out both;
-}
-
-@keyframes slide-in-up {
-    0%{
-        -webkit-transform: translateY(100px);
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100%{
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.scrolled.slide-down{
-    animation: slide-in-down 1s ease-in-out both;
-}
-
-@keyframes slide-in-down {
-    0%{
-        -webkit-transform: translateY(-100px);
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100%{
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.scrolled.slide-left {
-    animation: slide-in-left 1s ease-in-out both;
-}
-
-@keyframes slide-in-left {
-    0% {
-      -webkit-transform: translateX(-100px);
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1;
-    }
-}
-
-.scrolled.slide-right {
-    animation: slide-in-right 1s ease-in-out both;
- }
-
-@keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(100px);
-      transform: translateX(100px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-      opacity: 1;
-    }
-}
-
-.introduction-section, .about-section, .gameplay-section{
-    width: 100%;
-}
-
 .menubar {
   width:40px;
   height: 20px;
@@ -333,7 +251,7 @@ img {
   min-height: 100vh;
   max-width: 100%;
   max-height: 100vh;
-  object-fit: cover;
+  object-fit:inherit;
   z-index: -1;
 }
 
@@ -352,7 +270,7 @@ img {
 
 /* Main Content CSS */
 .main {
-  background-color: #272727;
+  background-color: #ffffff00;
 }
 
 .main__container {
@@ -362,8 +280,7 @@ img {
   justify-self: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: 
-  #1b1b1b;
+
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -379,8 +296,8 @@ img {
 }
 
 .main__content h1 {
-  font-size: 5rem;
-  
+  font-size: 9vw;
+  margin-top: 25px;
  
   background-size: 100%;
   -webkit-background-clip: text;
@@ -390,8 +307,8 @@ img {
 }
 
 .main__content h2 {
-  font-size: 4rem;
-  margin-top: 10px;
+  font-size: 5vw;
+  margin-top: 5px;
   background-color: white;
   
   background-size: 100%;
@@ -403,8 +320,9 @@ img {
 
 .main__content p {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1vw;
   font-weight: 700;
+  color: #ddd2d2 !important;
   
 }
 .vocal{
@@ -413,17 +331,17 @@ img {
   width: 100%;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
+  
   text-align: left;
   white-space: nowrap;
-  overflow: hidden;
+ 
   transform: translateY(-50%); 
      
 }
 
 /* Animation */
 .anim-typewriter{
-animation: typewriter 4s steps(44) 1s 1 normal both,
+animation: typewriter 5s steps(44) 1s 1 normal both,
            blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
@@ -549,9 +467,23 @@ to{border-right-color: transparent;}
     grid-gap: 0 40px;
 }
 
-.container-serve .box-serve
+.container-serve .box-serve1
 {  
 	position: relative;
+	height: 400px;
+    margin-left: 2%;
+	background: #151516;
+  background-image: url(images/benstroke.png);
+	
+  background-size: cover;
+  backface-visibility: hidden;
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+}
+.container-serve .box-serve2{
+  position: relative;
 	height: 400px;
     margin-left: 2%;
 	background: #151516;
@@ -560,7 +492,6 @@ to{border-right-color: transparent;}
 	align-items: center;
 	border: 1px solid #000;
 }
-
 .container-serve .box-serve:before
 {
 	content: '';
@@ -1412,15 +1343,19 @@ margin-bottom: 0;
 
 
 /* Footer CSS */
+footer{
+  display: flex;
+  justify-content: space-between;
+}
 .footer__container {
   background-color: #141414;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  justify-content:flex-end;
+  justify-content:space-between;
   align-items:stretch;
   padding-bottom: 4rem;        
- float: left;
+ float: right;
   width: 100%;
   bottom: 0;
  
@@ -1457,7 +1392,7 @@ margin-bottom: 0;
 
 .footer__link--wrapper {
   display: flex;
-  float: left;
+ 
 }
 
 .footer__link--items {
@@ -1468,7 +1403,7 @@ margin-bottom: 0;
   text-align: left;
   width: 100%;
   box-sizing: border-box;
-  float: left;
+  
 }
 
 .footer__link--items h2 {
@@ -1589,3 +1524,13 @@ margin-bottom: 0;
 .ser{
   background-color: #d0cbcb;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .menubar{
+      width: 100%;
+    }
+    
+  }
