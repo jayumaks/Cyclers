@@ -445,6 +445,8 @@ img {
 /* Main Content CSS */
 .main {
   background-color: #ffffff00;
+  width: 100%;
+  height: 100%;
 }
 
 .main__container {
@@ -640,7 +642,7 @@ to{border-right-color: transparent;}
 	height: 400px;
     margin-left: 2%;
 	background: #151516;
-  background-image: url(images/benstroke.png);
+  /* background-image: url(images/benstroke.png); */
 	
   background-size: cover;
   backface-visibility: hidden;
@@ -724,7 +726,7 @@ to{border-right-color: transparent;}
 	margin: 0;
 	padding: 0;
 	font-size: 10em;
-	color: rgba(9, 1, 1, 0.912);
+	color: rgba(245, 241, 241, 0.371);
 	transition: 0.5s;
 }
 
@@ -843,7 +845,7 @@ section .services {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 130vh;
 
   background-attachment:scroll;
   width: 100%;
@@ -867,9 +869,11 @@ section .services {
 .services h1{
     margin-top: 2px;
     text-align: center;
+    font-size: 50px;
 }
 
 .service__tag {
+  padding-top: 100px;
   color: #000;
   text-align: center;
   text-decoration: line-through;
@@ -886,6 +890,7 @@ section button{
 }
 .service__tag p{
   color: #000 !important;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 960px) {
@@ -1551,7 +1556,7 @@ footer{
 .footer__links {
   width: 100%;
   height: 40vh;
-  max-width: 1000px;
+  max-width: 100000px;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
@@ -1599,6 +1604,8 @@ footer{
   font-size: 24px;
 }
 
+
+
 .social__media {
   
   height: 30%;
@@ -1643,15 +1650,16 @@ footer{
 .contact-section{
   padding: 5%;
   color: #fff;
+ margin-left: 10px;
 }
 
 .contact{
   width: 100%;
   height: 15.25rem;
   
-  background: linear-gradient(180deg, rgb(189, 186, 186) 0%, rgba(255, 255, 255, 0) 100%);
-  border-radius: 17px;
-  padding: 5% 13%;
+  background: linear-gradient(180deg, rgb(79, 77, 77) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 1007px;
+  padding: 5% 5%;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -1661,6 +1669,7 @@ footer{
   font-size: 1.5rem;
   font-family: "Righteous";
   margin-bottom: 1rem;
+  color: white;
 }
 
 .contact p{
@@ -1672,7 +1681,7 @@ footer{
   height: 54px;
   border-radius: 50px;
   border: none;
-  background: rgba(255, 255, 255, 0.29);
+  background: rgba(26, 24, 24, 0.371);
   padding-left: 10%;
 }
 
@@ -1689,7 +1698,7 @@ footer{
 .send-div{
   width: 5.813rem;
   height: 54px;
-  background-color: #FF325F;
+  background-color: #feef3c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1698,6 +1707,9 @@ footer{
   right: 0;
   top: 0;
 }
+
+
+
 
 
 
