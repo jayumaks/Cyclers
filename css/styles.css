@@ -437,14 +437,6 @@ img {
 }
 
 
-
-
-.mySlides {
-  display:none;
-}
-.w3-left, .w3-right, .w3-badge {cursor:pointer;}
-.w3-badge {height:13px;width:13px;padding:0;}
-
 /* Main Content CSS */
 .main {
   background-color: #ffffff00;
@@ -576,10 +568,6 @@ to{border-right-color: transparent;}
   width: 100%;
 }
 
-.main__img--container {
-  text-align: center;
-  
-}
 
 #main__img {
   height: 80%;
@@ -1048,6 +1036,7 @@ h6{
   margin-bottom: 50px;
   margin-top: 40px;
   text-align: center;
+  background-attachment: fixed;
 }
 .section-title h1{
   display: inline-block;
@@ -1098,7 +1087,15 @@ h6{
   height: auto;
   border-radius: 100%;
   border: 20px solid #f3f4fa;
+  transition: 0.5s all ease-in-out;
 }
+
+ 
+.team-img:hover img {
+  transform: scale(1.5);
+}
+
+
 
 .team .team-content{
   padding: 80px 20px 20px 20px;
@@ -1128,23 +1125,29 @@ margin-bottom: 0;
   font-weight: 400;
   line-height: 22px;
 }
-.team .team-social{
+ .team .team-social{
   position: absolute;
   width: 100%;
   height: 100%;
   padding: 35px;
-  top: 0;
-  left:0;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(77, 73, 73, 0.6);
-  transition: all .3s;
+  
+ 
   font-size: 0;
-  z-index: 1;
-  opacity: 0;
+  
+  
 }
-.team:hover .team-social{
+
+
+
+
+
+
+
+/*.team:hover .team-social{
   opacity: 1;
 }
 .team .team-social a{
@@ -1185,7 +1188,7 @@ margin-bottom: 0;
 }
 .team .team-social a:hover{
   background: #222222;
-}
+} */
 
 
 /* Mobile Responsive */
@@ -1611,7 +1614,7 @@ footer{
 
 .social__media {
   
-  height: 30%;
+  height: 15%;
   width: 100%;
 }
 
@@ -1712,8 +1715,11 @@ footer{
   top: 0;
 }
 
-
-
+/* 
+.insta blockquote{
+  width:50%;
+  height: 1%;
+} */
 
 
 
@@ -1740,47 +1746,4 @@ footer{
   }
 }
 
-@media screen and (max-width: 480px) {
-  .footer__link--items {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-  }
-}
 
-
-/* Slider */
-.brand-carousel {
-	background: #fcf6ea;
-	margin: 0;
-}
-.owl-dots {
-	text-align: center;
-	margin-top: 40px;
-}
-.owl-dot {
-	display: inline-block;
-	height: 15px !important;
-	width: 15px !important;
-	background-color: #444 !important;
-	opacity: 0.8;
-	border-radius: 50%;
-	margin: 0 5px;
-}
-.owl-dot.active {
-	background-color: black !important;
-}
-
-.ser{
-  background-color: #d0cbcb;
-}
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 800px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .menubar{
-      width: 100%;
-    }
-    
-  }

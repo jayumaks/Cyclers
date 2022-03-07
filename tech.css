@@ -121,7 +121,7 @@ img {vertical-align: middle;}
   /***************************************/
   /***************************************/
   /* Introduction Section */
-  .introduction{
+  .Containes{
       padding: 15% 4%;
       width: 100%;
       flex-direction: column;
@@ -129,15 +129,15 @@ img {vertical-align: middle;}
       align-items: flex-start;
   }
 
-  .introduction h3{
+  .Containes h3{
       font-size: 1.9rem;
   }
 
-  .introduction p{
+  .Containes p{
       font-size: 1rem;
   }
 
-  .introduction-btn{
+  .Containes-btn{
       margin-top: 2.5rem;
       width: 12rem;
       height: 3rem;
@@ -172,13 +172,13 @@ img {vertical-align: middle;}
   /***************************************/
   /***************************************/
   /* About Section */
-  .about{
+  .services{
       width: 100%;
       padding: 5% 4%;
       flex-direction: column-reverse;
   }
 
-  .about-content-one{
+  .serivce__tag .box-serve{
       width: 100%;
       flex-direction: column;
       gap: 1.5rem;
@@ -186,7 +186,7 @@ img {vertical-align: middle;}
       align-items: center;
   }
 
-  .about-content-one .child{
+  /* .about-content-one .child{
       margin-top: 2rem;
   }
 
@@ -233,36 +233,36 @@ img {vertical-align: middle;}
 
   .about-content-one .child{
       width: 70%;
-  }
+  } */
 
   /***************************************/
   /***************************************/
   /***************************************/
   /* Gameplay Section */
 
-  .gameplay{
+  .values-wraper{
       width: 100%;
       padding: 5% 4%;
       flex-direction: column;
   }
   
-  .gameplay-content img{
+  .all-in-one img{
       width: 100%;
   }
   
-  .gameplay-content-one{
+  /* .gameplay-content-one{
       padding: 0 ;
-  }
+  } */
   
-  .gameplay-content-one h4{
+  .live-equipment .live-equipment-description h1{
       font-size: 1rem;
   }
   
-  .gameplay-content-one h3{
+  /* .gameplay-content-one h3{
       font-size: 1.5rem;
-  }
+  } */
   
-  .gameplay-content-one p{
+  .live-equipment .live-equipment-description p{
       font-size: 1rem;
   }
 
