@@ -1746,4 +1746,101 @@ footer{
   }
 }
 
+@media only screen and (max-width: 768px){
+  .MessageInfo {
+    color: #f2f2f3;
+    font-size: 1px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+  }
 
+  .main__content h1 {
+    font-size: 9vw;
+    margin-top: 25px;
+   
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .main__content h2 {
+    font-size: 5vw;
+    margin-top: 5px;
+    background-color: white;
+    
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 3vw;
+    font-weight: 700;
+    color: #ddd2d2 !important;
+    
+  }
+  .vocal{
+    position: relative;
+    top: 2px;  
+    width: 100%;
+    margin: 20px auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    
+    text-align: left;
+    white-space: nowrap;
+   
+    transform: translateY(40%); 
+       
+  }
+  
+  
+  /* Animation */
+  .anim-typewriter{
+  animation: typewriter 5s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+  from{width: 0;}
+  to{width: 25%;}
+  }
+  @keyframes blinkTextCursor{
+  from{border-right-color: rgba(255, 255, 255, 0);}
+  to{border-right-color: transparent;}
+  }
+
+  .wave {
+    width: 100%;
+      opacity: 60%;
+      animation-duration: 5s;
+      animation-name: rotate;
+      animation-iteration-count: infinite;
+      
+  }
+  #main__img {
+    height: 50%;
+    width: 50%;
+  }
+  
+  @keyframes rotate {
+      0%{
+          display: block;
+      }
+  
+      50%{
+          display: block;
+          transform:rotateY(180deg);
+          transition: ease-in
+      }
+  
+      100%{
+          display: block;
+          transform: rotateY(0);
+      }
+    }
+}
