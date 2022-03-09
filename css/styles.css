@@ -1844,3 +1844,11 @@ footer{
       }
     }
 }
+
+
+
+@media screen and (max-width: 375px) {
+  html,body{
+    overflow-x: hidden;
+}
+}
