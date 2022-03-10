@@ -2003,7 +2003,7 @@ footer{
 
 .work-sample-grid{
   background-color: #ffffff;
-  display: grid !important;
+  display: grid;
   justify-content: center;
   padding-bottom: 100px;
   
