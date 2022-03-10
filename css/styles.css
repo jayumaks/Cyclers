@@ -928,7 +928,7 @@ section button{
 
 
 .values-wraper h1{
-  color: #feef3c;
+  color: #f0f0ef;
 
   
 }
@@ -1302,9 +1302,9 @@ margin-bottom: 0;
 }
 .works-and-clients-text p{
   color: rgba(0, 0, 0, 0.987) !important;
-
+  
   text-align: center;
-  justify-content: center;
+  justify-content:left;
 }
 
 .work-sample-grid{
@@ -1823,8 +1823,8 @@ footer{
       
   }
   #main__img {
-    height: 50%;
-    width: 50%;
+    height: 10%;
+    width: 40%;
   }
   
   @keyframes rotate {
@@ -1843,12 +1843,271 @@ footer{
           transform: rotateY(0);
       }
     }
+    
+    .services{
+      width: 100%;
+    }
+    .service__tag{
+      padding: 5px 0 0 0 ;
+    }
+    .service__tag p{
+      color: #000 !important;
+      font-size: 20px;
+      margin-bottom: 1px;
+      
+    }
+
+    .service__tag h1{
+      
+      font-size: 40px;
+      margin-top: 2px;
+    }
+
+
+    .container-serve 
+{
+	position: relative;
+	width: 100%;
+  padding: 10px 40px 40px 10px;
+
+   
+}
+
+.container-serve .box-serve1
+{  
+	position: relative;
+	height: 400px;
+    margin-left: 2%;
+	
+}
+
+
+.box-serve .content-serve h3
+{
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: #ffff !important;
+}
+
+.box-serve .content-serve h2
+{
+	position: absolute;
+	top: -60px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	font-size: 5em;
+	color: rgba(245, 241, 241, 0.371);
+	transition: 0.5s;
+}
+
+.box-serve:hover .content-serve h2
+{
+	top: -90px;
+}
+
+
+.box-serve:hover .content-serve a
+{
+	
+  border-radius: 70px;
+}
+
+.box-serve .content-serve a:hover
+{
+	
+  border-radius: 70px;
+}
+
+.all-in-one{
+  width: 50%;
+}
+
+.all-in-one iframe{
+ width: 200px;
+ height: 200px;
+
+}
+
+.values-description{
+  margin-top: 10px;
+  display: flex;
+  height: 14vh;
+  padding-top: 1px;
+ 
+  justify-content: center;
+  font-size: 3.85VW;
+
+}
+
+.values-wraper h1{
+  color: white;
+}
+.values-wraper p{
+  font-size: 15px;
+}
+
+.values{
+  width: 90vw;
+  margin: auto;
+}
+
+.values-btn{
+  border: none;
+  width: 22.375vw;
+  text-decoration: none;
+  padding: 10px; 
+  font-family: 'Righteous', cursive;
+  background-color: #FFF112;
+  margin-top:80px ;
+  cursor: pointer;
+  position: relative;
+  left: 33vw;
+}
+
+.values-btn a{
+  color: black;
+  font-size: 2.9VW;
+  
+}
+.values-btn a:hover{
+  color: #000;
+}
+
+.work-and-client-header{
+  
+  font-size: 4.3vw;
+  text-decoration-thickness: 2px;
+
+}
+.works-and-clients-text {
+  
+  background-color: #d0cbcb;
+  padding-bottom: 10px;
+  width: 100%;
+  padding: 30px 30px 30px 30px;
+  
+  color: #080808;
+  position: relative;
+ 
+  
+}
+.works-and-clients-text p{
+  color: rgba(0, 0, 0, 0.987) !important;
+  
+  text-align: center;
+  justify-content: left !important;
+}
+
+.work-sample-grid{
+  background-color: #ffffff;
+  display: grid !important;
+  justify-content: center;
+  padding-bottom: 100px;
+  
+}
+
+
+.grid-cointainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 70vw;
+  margin-left:1vw ;
+  height: 90vh;
+  padding-top: 10vh;
+}
+
+.grid-cointainer .grid-item{
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+  height: 250px;
+  overflow: hidden;    
+}
+
+.grid-cointainer .grid-item::before{
+  content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.grid-cointainer .grid-item img{
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-cointainer .grid-item:hover::before{
+  top: 0;
+  right: calc(100% - 5px);
+  z-index: 10;
+}
+
+.grid-cointainer .grid-item .img-text{
+  position: absolute;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(36, 34, 34, 0.9);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 100%;
+	transition: all 0.5s ease-in-out;	
+}
+
+.grid-cointainer .grid-item:hover .img-text{
+  top: 0;
+    right: 0;
+}
+.grid-item{
+  padding-top: 3.4375vw;
+  padding-right: 2.75vw;
+}
+
+
+.grid-item h4{
+  font-family: 'Righteous';
+  font-size: 1VW;
+  font-style: normal;
+  width: 200px;
+  font-weight: 450;
+  line-height: 1.306vw;
+  height: 1.443vh;
+  width: fit-content;
+  color: #e8e6e6;
+}
+
+.grid-item p{
+  font-family: 'Righteous';
+  padding-top: 10px;
+  font-size: .8VW;
+  font-style: normal;
+  font-weight: 300;
+  line-height: .8vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+
 }
 
 
 
-@media screen and (max-width: 375px) {
-  html,body{
+@media all  {
+  body{
     overflow-x: hidden;
+}
+.navbar{
+  position:sticky!important;
 }
 }
