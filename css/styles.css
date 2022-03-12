@@ -2123,7 +2123,7 @@ footer{
 }
 
 @media all {
-  body{
+  html, body{
     overflow-x: hidden;
 }
 }
