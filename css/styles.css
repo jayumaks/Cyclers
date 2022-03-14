@@ -1072,6 +1072,7 @@ h6{
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  grid-template-columns: auto auto auto;
 }
 .column{
   position: relative;
@@ -1080,9 +1081,11 @@ h6{
   padding-left: 15px;
   flex: 0 0 100%;
   max-width: 100%;
+  
 }
 .team{
   margin-bottom:30px ;
+  
 }
 .team .team-img{
   position: relative;
@@ -1148,7 +1151,26 @@ margin-bottom: 0;
   
 }
 
-
+#loadMore {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+#loadMore a {
+  background: #feef3c;
+  border-radius: 3px;
+  color: #151516;
+  display: inline-block;
+  padding: 10px 30px;
+  transition: all 0.25s ease-out;
+  -webkit-font-smoothing: antialiased;
+}
+#loadMore a:hover {
+  background-color: #151516;
+  color: #e3e3e3;
+}
+.hidden {display:none;}
 
 
 
@@ -1403,7 +1425,7 @@ margin-bottom: 0;
 .grid-item p{
   font-family: 'Righteous';
   padding-top: 10px;
-  font-size: .8VW;
+  font-size: 1.8VW;
   font-style: normal;
   font-weight: 300;
   line-height: 8.8vw;
@@ -1414,141 +1436,7 @@ margin-bottom: 0;
 }
 
 
-.our-team-wraper{
-  background-color: #ffff;
-  height: 40vh;
-}
 
-.our-team-text{
-  position: relative;
-  left:-14vw;
-}
-
-
-
-.our-team-header{
-  display: flex;
-  justify-content: space-between;
-  width: 60vw;
-  margin: auto;
-  font-family: 'Raleway', sans-serif;
-  height: 20vh;
-  position: relative;
-  top: 100px;
-
-}
-
-
-
-.professional-team-flex{
-  display: flex;
-  width: 30vw;
-  justify-content: space-between;
-  padding-top: 80px;
-  position: relative;
-  left:-15vw;
-}
-
-
-.professional-team-flex h1{
-  width: 30vw;
-  font-family: righteous;
-  font-size: 3.3vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 65px;
-  letter-spacing: 0em;
-  text-align: left;
-
-}
-
-.professional-team-border{
-  padding-top: 40px;
-  width: 15vw;
-  height: 2.06vh;
-  border-bottom: 4px solid yellow;
-}
-
-.our-team-header h3{
-  transform: rotate(90deg);
-  font-family: Raleway;
-  font-size: 1.1VW;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 19px;
-  letter-spacing: 0.3em;
-  text-align: left;
-  height: 20vh;
-}
-
-
-.team-photos{
-  display: flex;
-  max-width: 100vw;
-  height: 90vh;
-  background-color: #080808;
-  overflow: hidden;
-}
-
-.team-photo{
-
-  width:24.7vw;
-  height: 65vh;
-  position: relative;
-  background-image: radial-gradient(ellipse, #0000, #0007);
-
-}
-
-.team-photos-icons, .team-member-name{
-  position: absolute;
-  z-index: 1;
-  width: fit-content;
-  height: fit-content;
-  margin-top: 48vh;
-  margin-left: 9vw;
-  
-}
-
-
-
-
-.team-icon{
-  width: 16px;
-  height: 1.8vh;
-  padding-left: 5px;
-  margin-bottom: -10vh;
-
-
-}
-
-.team-member-name{
-  color: white;
-  font-family: Open Sans;
-  font-size: 1.3VW;
-  padding-left: 10px;
-  padding-top:4vh ;
-}
-
-#loadMore {
-  padding-bottom: 30px;
-  padding-top: 30px;
-  text-align: center;
-  width: 100%;
-}
-#loadMore a {
-  background: #feef3c;
-  border-radius: 3px;
-  color: #151516;
-  display: inline-block;
-  padding: 10px 30px;
-  transition: all 0.25s ease-out;
-  -webkit-font-smoothing: antialiased;
-}
-#loadMore a:hover {
-  background-color: #151516;
-  color: #e3e3e3;
-}
-.hidden {display:none;}
 
 /* Footer CSS */
 footer{
@@ -2059,7 +1947,7 @@ footer{
   width: 200px;
   font-weight: 450;
   line-height: 2.306vw;
-  height: 1.443vh;
+  height: 10.443vh;
   width: fit-content;
   color: #e8e6e6;
 }
@@ -2304,10 +2192,10 @@ footer{
 	width: 100%;
   padding: 10px 40px 40px 10px;
 
-   
+  
 }
 
-.container-serve .box-serve1
+.container-serve .box-serve
 {  
 	position: relative;
 	height: 400px;
@@ -2339,7 +2227,11 @@ footer{
 
 .box-serve:hover .content-serve h2
 {
-	top: -10000px;
+	top: -10px;
+}
+
+.box-serve .content-serve p{
+  font-size: 15px;
 }
 
 
@@ -2360,20 +2252,22 @@ footer{
 }
 
 .all-in-one iframe{
- width: 200px;
- height: 200px;
+ display: none;
 
 }
 
 .values-description{
-  margin-top: 10px;
+  margin-top: -100px;
   display: flex;
   height: 14vh;
   padding-top: 1px;
  
   justify-content: center;
-  font-size: 3.85VW;
+  font-size: 4.85VW;
 
+}
+.what-we-have{
+  
 }
 
 .values-wraper h1{
@@ -2393,15 +2287,15 @@ footer{
   width: 40%;
   text-decoration: none;
   text-align: center;
-  padding: auto;
+ 
   justify-content: center;
-  
+  margin-top: 150px;
   
 }
 
 .values-btn a{
   color: black;
-  font-size: 2.9VW;
+  font-size: 3.9VW;
   
 }
 .values-btn a:hover{
@@ -2437,42 +2331,43 @@ footer{
   background-color: #ffffff;
   display: grid;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 300px;
   
 }
 
 
 .grid-cointainer{
   display: grid;
-  grid-template-columns: auto auto auto;
-  max-width: 100%;
+  grid-template-columns: auto auto;
+  max-width: 400%;
 }
 
 
 .grid-item{
-  max-width: 400%;
+  max-width: 100%;
 }
 
 
 
 .grid-item h4{
   font-family: 'Righteous';
-  font-size: 2vw;
+  font-size: 1vw;
   font-style: normal;
   width: 200px;
   font-weight: 450;
-  line-height: 2.306vw;
-  height: 1.443vh;
+  line-height: 4.306vw;
+  height: 10.443vh;
   width: fit-content;
   color: #e8e6e6;
+ 
 }
 
 .grid-item p{
  
-  font-size: 2.8VW;
+  font-size: 4.8VW;
   font-style: normal;
   
-  line-height: 2.8vw;
+  line-height: 5.8vw;
   letter-spacing: 0em;
 }
 
@@ -2492,7 +2387,7 @@ footer{
 
 
 .contact input{
-  width: 17rem;
+  width: 7rem;
   height: 54px;
   border-radius: 50px;
   border: none;
@@ -2510,13 +2405,13 @@ footer{
 }
 
 .send-div{
-  width: 5.813rem;
+  width: 1.813rem;
   height: 54px;
   background-color: #feef3c;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 10px;
   position: absolute;
   right: 0;
   top: 0;
@@ -2527,43 +2422,12 @@ footer{
 
 
 /* Footer CSS */
-footer{
-  display: flex;
-  justify-content: space-between;
-}
 
-.footer__logo img{
-    height: 163px;
-    width: 163px;
-    border-radius: 0px;
-    background-position: o 100%;
-    margin-top: -200px;
-}
-
-.footer__links {
+.footer__link--wrapper .iframez{
   width: 100%;
-  height: 90vh;
-  max-width: 10000px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  margin: 1px auto;
-}
 
-.footer__link--wrapper {
-  display: flex;
- 
-}
-
-.footer__link--items {
-  
-  text-align: left;
- 
-  
-}
-
-.footer__link--items h2 {
-  margin-bottom: 2px;
+   position:absolute;
+    display:inline-block; 
 }
 
 .social__icon--link {
@@ -2580,28 +2444,27 @@ footer{
 }
 
 .social__media--wrap {
-  display: flex;
-  justify-content: right;
-  align-items: right;
+  
   width: 100%;
-  max-width: 1000px;
-  margin: 40px auto 0 auto;
+
+  
 }
 
 .social__icons {
   display: flex;
   justify-content: space-between;
-  align-items: right;
+  align-items: center;
   width: 200px;
 }
 
 
 
 .website__rights {
+  width: 100%;
   color: #fff;
-  padding-right: 50px;
-  justify-content:right ;
-  align-items:rights;
+  display: flex;
+  
+  align-items: center;
 }
 
 
