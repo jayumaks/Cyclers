@@ -36,6 +36,15 @@ function SlideShow(n) {
   circles[slidePosition-1].className += " enable";
 } 
 
+$(".main__container").slick({
+  arrows: false,
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 10,
+  mobileFirst: true
+});
 
 
 
