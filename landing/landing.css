@@ -1,87 +1,74 @@
-.slide-container .prev,
-.slide-container .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: all 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.slide-container .prev:hover,
-.slide-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-}
-
-.slide-container .prev {
-  left: 2px;
-}
-
-.slide-container .next {
-  right: 2px;
-}
-
-.dots-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.dots-container .dot {
-  cursor: pointer;
-  margin: 5px;
-  width: 20px;
-  height: 20px;
-  color: #333;
-  border-radius: 50%;
-  background-color: #dfd6ce;
-}
-
-.dots-container .dot.active {
-  border: 2px solid green;
-}
-
-* {
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-
 body {
-  height: 100%;
-/*   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+    background-color: black;
 }
 
-body h1 {
-  text-align: center;
+.gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
 }
 
-.slide-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1000px;
-  margin: auto;
-  position: relative;
+.gallery:hover .gallery__image {
+    filter: grayscale(1);
 }
 
-.slide-container .slide {
-  display: none;
-  width: 100%;
+.gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
 }
 
-.slide-container .slide.fade {
-  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+.gallery__link {
+    margin: 2px;
+    overflow: hidden;
 }
 
-.slide-container .slide img {
-  width: 100%;
+.gallery__link:hover .gallery__image {
+    filter: grayscale(0);
+}
+
+.gallery__link:hover .gallery__caption {
+    opacity: 1;
+}
+
+.gallery__thumb {
+    position: relative;
+}
+
+.gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.gallery__image:hover {
+    transform: scale(1.1);
+}
+
+.gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: 'Righteous';
+    font-size: 16px;
+    font-weight: 1000px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.864) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+
+button {
+    text-align: center;
+    background-color: #feef3c;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 325px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
