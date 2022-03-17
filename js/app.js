@@ -36,13 +36,13 @@ function SlideShow(n) {
   circles[slidePosition-1].className += " enable";
 } 
 
-$(".main__container").slick({
+$(".Containes").slick({
   arrows: false,
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 10,
+  autoplaySpeed: 1000,
   mobileFirst: true
 });
 
