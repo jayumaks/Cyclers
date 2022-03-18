@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #1B1B1C;
 }
 
 .gallery {
@@ -51,24 +51,10 @@ body {
     left: 0;
     padding: 25px 15px 15px;
     width: 100%;
-    font-family: 'Righteous';
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
-    font-weight: 1000px;
-    color: white;
+    color: #feef3c;
     opacity: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.864) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     transition: 0.3s;
-}
-
-button {
-    text-align: center;
-    background-color: #feef3c;
-    border-radius: 20px;
-}
-
-@media only screen and (max-width: 325px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: auto;
-    }
 }
