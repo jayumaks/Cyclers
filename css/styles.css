@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+html {
     background-color: #1B1B1C;
     font-family: 'Righteous';
     max-width: 100%;
+    overflow-x: hidden;
 }
 
 .js-scroll {
@@ -449,7 +451,6 @@ img {
     max-height: 200vh;
     object-fit: fill;
     z-index: -1;
-    opacity: -100px;
 }
 
 #bg-video::-webkit-media-controls {
@@ -1687,16 +1688,6 @@ footer {
         white-space: nowrap;
         transform: translateY(40%);
     }
-    .artst {
-        position: relative;
-        top: 2px;
-        width: 100%;
-        margin: 20px auto;
-        border-right: 2px solid rgba(255, 255, 255, .75);
-        text-align: left;
-        white-space: nowrap;
-        transform: translateY(40%);
-    }
     /* Animation */
     .anim-typewriter {
         animation: typewriter 5s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
@@ -1719,14 +1710,18 @@ footer {
     }
     .wave {
         width: 100%;
-        opacity: 100%;
+        opacity: 9;
         animation-duration: 10s;
         animation-name: rotate;
         animation-iteration-count: infinite;
     }
+    .art img {
+        height: 500px;
+    }
     #main__img {
-        margin-top: -40px;
-        height: 20%;
+        margin-top: -50px;
+        margin-bottom: -10px;
+        height: 90%;
         width: 50%;
     }
     @keyframes rotate {
@@ -1978,7 +1973,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
     .main__content h1 {
         font-size: 19vw;
         margin-top: 25px;
@@ -2016,7 +2011,6 @@ footer {
     }
     .wave {
         width: 100%;
-        opacity: 100%;
         animation-duration: 15s;
         animation-name: rotate;
         animation-iteration-count: infinite;
@@ -2040,7 +2034,9 @@ footer {
             transform: rotateY(0);
         }
     }
-    .services {
+    section .services {
+        height: fit-content;
+        background-attachment: fixed;
         width: 100%;
     }
     .service__tag {
@@ -2049,20 +2045,23 @@ footer {
     .service__tag p {
         color: #000 !important;
         font-size: 20px;
-        margin-top: -150px;
+        margin-top: 50px;
     }
     .service__tag h1 {
         font-size: 40px;
         margin-top: 2px;
     }
     .container-serve {
+        margin-top: 50px;
         position: relative;
         width: 100%;
-        padding: 10px 40px 40px 10px;
+        padding: 1px 40px 40px 10px;
+        display: grid;
+        grid-template-columns: auto;
     }
     .box-serve {
-        width: 80%;
-        margin: 60px auto;
+        width: 100%;
+        margin: 50px auto;
     }
     .container-serve .box-serve {
         position: relative;
@@ -2106,13 +2105,23 @@ footer {
     }
     .values-description {
         margin-top: -100px;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto;
         height: 14vh;
         padding-top: 1px;
         justify-content: center;
         font-size: 4.85VW;
     }
-    .what-we-have {}
+    .what-we-have,
+    .what-we-offer {
+        display: grid;
+        grid-template-columns: auto;
+        height: 80vh;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+    }
     .values-wraper h1 {
         color: white;
     }
@@ -2129,7 +2138,7 @@ footer {
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin-top: 150px;
+        margin-top: 50px;
     }
     .values-btn a {
         color: black;
@@ -2137,6 +2146,9 @@ footer {
     }
     .values-btn a:hover {
         color: #000;
+    }
+    .works-and-clients {
+        height: 200vh;
     }
     .work-and-client-header {
         font-size: 4.3vw;
@@ -2159,7 +2171,7 @@ footer {
         background-color: #ffffff;
         display: grid;
         justify-content: center;
-        padding-bottom: 300px;
+        padding-bottom: 400px;
     }
     .grid-cointainer {
         display: grid;
@@ -2253,8 +2265,9 @@ footer {
     }
 }
 
-@media all {
-    body {
+
+/* @media all {
+    html {
         overflow-x: hidden;
     }
-}
+} */
