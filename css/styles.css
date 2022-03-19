@@ -2242,7 +2242,7 @@ footer {
     }
     .social__icon--link {
         color: #fff;
-        font-size: 24px;
+        font-size: 20px;
     }
     .social__media {
         height: 25%;
@@ -2262,6 +2262,7 @@ footer {
         color: #fff;
         display: flex;
         align-items: center;
+        font-size: 15px;
     }
 }
 
