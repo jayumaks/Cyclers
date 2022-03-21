@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 
-body,
-html {
+body {
     background-color: #1b1b1c;
     font-family: 'Righteous';
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 .js-scroll {
@@ -1066,7 +1064,6 @@ h6 {
     margin-bottom: 50px;
     margin-top: 40px;
     text-align: center;
-    background-attachment: fixed;
 }
 
 .section-title h1 {
@@ -2290,9 +2287,9 @@ footer {
     }
 }
 
-
-/* @media all {
-    html {
+@media all {
+    html,
+    body {
         overflow-x: hidden;
     }
-} */
+}
