@@ -692,8 +692,10 @@ img {
     height: 400px;
     margin-left: 2%;
     background: #151516;
-    /* background-image: url(images/benstroke.png); */
-    background-size: cover;
+    background-image: url(../images/16.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
@@ -710,6 +712,11 @@ img {
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
+    background-image: url(../images/16.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
 }
 
 .container-serve .box-serve:before {
@@ -917,7 +924,7 @@ section .services {
     text-decoration: line-through;
     text-decoration-color: #feef3c;
     text-decoration-thickness: 3px;
-    margin-top: 22px;
+    margin-top: -172px;
 }
 
 section button {
