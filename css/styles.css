@@ -3,15 +3,12 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-body {
     background-color: #1b1b1c;
     font-family: 'Righteous';
     max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .js-scroll {
@@ -694,7 +691,7 @@ img {
     background: #151516;
     background-image: url(../images/16.jpg);
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     backface-visibility: hidden;
     display: flex;
