@@ -7,6 +7,9 @@
     <meta name="description" content="Audio Recording, Mixing, Editing, mastering, Live Session" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CYCLERS||STUDIOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 
 
@@ -44,10 +47,10 @@
                     <a href="../home.html" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links">About Us</a>
+                    <a href="../home.html" class="navbar__links">About Us</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#services" class="navbar__links">Services</a>
+                    <a href="../home.html" class="navbar__links">Services</a>
                 </li>
                 <li class="navbar__item">
                     <a href="#" class="navbar__links">Contact Us</a>
@@ -56,7 +59,7 @@
 
                     <div class="login-container">
 
-                        <button class="main__btn" type="submit"><a href="./form/form.html">Book An Appointment</a></button>
+                        <button class="main__btn" type="submit"><a href="../form/form.html">Book An Appointment</a></button>
 
                     </div>
                 </li>
@@ -65,58 +68,74 @@
         </div>
     </nav>
 
-    <section>
-        <div class="background">
-            <div class="container">
-                <div class="screen">
-                    <div class="screen-header">
-                        <div class="screen-header-left">
-                            <div class="screen-header-button close"></div>
-                            <div class="screen-header-button maximize"></div>
-                            <div class="screen-header-button minimize"></div>
-                        </div>
-                        <div class="screen-header-right">
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                        </div>
-                    </div>
-                    <div class="screen-body">
-                        <div class="screen-body-item left">
-                            <div class="app-title">
-                                <span>DM US</span>
-                                <span></span>
-                            </div>
-                            <div class="app-contact">
-                                CONTACT INFO : <br><br>
-                                <+2348138016610 <br><br> +2349061331690 <br><br> +2347014364838</div>
-                        </div>
-                        <div class="screen-body-item">
-                            <div class="app-form">
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="FULL NAME" value="">
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="EMAIL">
-                                </div>
-                                <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="CONTACT NO">
-                                </div>
-                                <div class="app-form-group message">
-                                    <input class="app-form-control" placeholder="MESSAGE">
-                                </div>
-                                <div class="app-form-group buttons">
-                                    <!-- <button class="app-form-button">CANCEL</button> -->
-                                    <button class="app-form-button">SEND</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+    <section id="last">
+        <!-- heading -->
+        <div class="full">
+            <h3>Drop a Message</h3>
+
+            <div class="lt">
+
+                <!-- form starting -->
+                <form class="form-horizontal" method="post" action="contact.php">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- name -->
+                            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!-- email -->
+                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" />
+                        </div>
+                    </div>
+
+                    <!-- message -->
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message">
+                    </textarea>
+
+                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                    <i class="fa fa-paper-plane"></i>
+                    <span class="send-text">SEND</span>
+                    </button>
+                </form>
+                <!-- end of form -->
+            </div>
+
+            <!-- Contact information -->
+            <div class="rt">
+                <ul class="contact-list">
+                    <li class="list-item">
+                        <i class="fa fa-map-marker fa-1x">
+                        <span class="contact-text place">
+                        4, Osayogie Street, Opp. NIPCO Filling Station, Isihor, Benin City, Edo State, Nigeria.
+                        </span>
+                    </i>
+                    </li>
+
+                    <li class="list-item">
+                        <i class="fa fa-envelope fa-1x">
+                        <span class="contact-text gmail">
+                        <a href="mailto:info@cyclersstudio.com" title="Send me an email">
+                            info@cyclersstudio.com</a>
+                        </span>
+                    </i>
+                    </li>
+
+                    <li class="list-item">
+                        <i class="fa fa-phone fa-1x">
+                        <span class="contact-text phone">
+                        +2348138016610 +2349061331690 +2347014364838
+                        </span>
+                    </i>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
+
 
 
 
@@ -176,23 +195,23 @@
 
 
 
-                        <p class="website__rights ">© CYCLERS STUDIOS.
+                        <p class="website__rights ">© CYCLERS STUDIO.
                             <script>
                                 document.write(new Date().getFullYear())
                             </script>
                         </p>
                         <div class="social__icons">
-                            <a class="social__icon--link" href="/" target="_blank" aria-label="Facebook">
-                                <i class="fab fa-facebook"></i>
+                            <a class="social__icon--link" href="https://web.facebook.com/cyclersstudio" target="_blank" aria-label="Facebook">
+                                <i class="fa fa-facebook"></i>
                             </a>
-                            <a class="social__icon--link" href="/" target="_blank" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
+                            <a class="social__icon--link" href="https://www.instagram.com/cyclersstudio/?hl=en" target="_blank" aria-label="Instagram">
+                                <i class="fa fa-instagram"></i>
                             </a>
-                            <a class="social__icon--link" href="/" target="_blank" aria-label="Youtube">
-                                <i class="fab fa-youtube"></i>
+                            <a class="social__icon--link" href="https://www.youtube.com/channel/UCuWEoYftZapqW8jxqdPJY1Q/featured" target="_blank" aria-label="Youtube">
+                                <i class="fa fa-youtube"></i>
                             </a>
-                            <a class="social__icon--link" href="/" target="_blank" aria-label="Twitter">
-                                <i class="fab fa-twitter"></i>
+                            <a class="social__icon--link" href="https://twitter.com/CyclersStudio" target="_blank" aria-label="Twitter">
+                                <i class="fa fa-twitter"></i>
                             </a>
                             <!-- <a
               class="social__icon--link"
@@ -209,7 +228,13 @@
     </footer>
 
     <script src="./contact.js"></script>
-    <script src="js/scroll.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script> -->
+
 
 </body>
 
