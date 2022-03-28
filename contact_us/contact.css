@@ -113,8 +113,8 @@ body {
 }
 
 .navbar__menu .login-container button {
-    float: right;
-    padding: 16px 10px;
+    float: left;
+    padding: 26px 80px;
     margin-top: 8px;
     margin-right: 16px;
     background-color: #feef3c;
@@ -132,8 +132,8 @@ body {
 }
 
 .navbar__menu .login-container button:hover {
-    background-color: rgb(15, 16, 15);
-    color: white;
+    background-color: rgb(3, 9, 3);
+    color: rgb(0, 0, 0);
 }
 
 @media screen and (max-width: 768px) {
@@ -141,6 +141,36 @@ body {
         justify-content: center;
         align-items: center;
     }
+}
+
+.main__btn {
+    font-size: 1rem;
+    background-image: inherit;
+    background-color: #feef3c;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 24px;
+    color: #1b1b1b;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #bf8484;
+    text-decoration: none;
+}
+
+.main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
 }
 
 
@@ -364,12 +394,12 @@ button {
     margin: 2%;
 }
 
-.btn-primary {
+.btn-primar {
     background-color: black;
-    border-radius: 5%;
+    border-radius: 35%;
 }
 
-.btn-primary:hover {
+.btn-primar:hover {
     background-color: #feef3c;
     color: #100f0f;
 }

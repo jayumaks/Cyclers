@@ -1,25 +1,24 @@
+
 <?php
-// Get data from form
-$name = $_POST['name'];
-$email= $_POST['email'];
-$message= $_POST['message'];
-
-$to = "jayumaks@gmail.com";
-$subject = "CONTACT US";
-
-// The following text will be sent
-// Name = user entered name
-// Email = user entered email
-// Message = user entered message
-$txt ="Name = ". $name . "\r\n Email = "
-	. $email . "\r\n Message =" . $message;
-
-$headers = "From: noreply@demosite.com" . "\r\n" .
-			"CC: somebodyelse@example.com";
-if($email != NULL) {
-	mail($to, $subject, $txt, $headers);
-}
-
-// Redirect to
-header("Location:../home.html");
+  $name = htmlspecialchars($_POST['name']);
+  $email = htmlspecialchars($_POST['email']);
+  
+  $message = htmlspecialchars($_POST['message']);
+  if(!empty($email) && !empty($message)){
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+      $receiver = "jayumaks@gmail.com"; //enter that email address where you want to receive all messages
+      $subject = "From: $name <$email>";
+      $body = "Name: $name\nEmail: $email\n\nMessage:\n$message\n\nRegards,\n$name";
+      $sender = "From: $email";
+      if(mail($receiver, $subject, $body, $sender)){
+         echo "Your message has been sent";
+      }else{
+         echo "Sorry, failed to send your message!";
+      }
+    }else{
+      echo "Enter a valid email address!";
+    }
+  }else{
+    echo "Email and message field is required!";
+  }
 ?>

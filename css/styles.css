@@ -689,9 +689,9 @@ img {
     height: 400px;
     margin-left: 2%;
     background: #151516;
-    background-image: url(../images/16.jpg);
+    /* background-image: url(../images/16.jpg); */
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 50%;
     background-repeat: no-repeat;
     backface-visibility: hidden;
     display: flex;
@@ -704,12 +704,12 @@ img {
     position: relative;
     height: 400px;
     margin-left: 2%;
-    background: #151516;
+    background: #1b1b1b;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
-    background-image: url(../images/16.jpg);
+    /* background-image: url(../images/16.jpg); */
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat;
@@ -964,12 +964,22 @@ section button {
 
 .values-wraper {
     background-color: #0c0c0c;
-    background-image: url(/images/videoproduction.png);
+    background-image: url(/images/3.jpeg);
     background-repeat: no-repeat;
     background-position: contain;
     background-attachment: fixed;
     background-size: cover;
     padding: 140px 0px;
+}
+
+.values:before {
+    content: '';
+    position: fixed;
+    background: rgba(196, 113, 113, 0.2);
+    border-radius: 0px;
+    right: 0;
+    bottom: 0px;
+    left: 0;
 }
 
 .values-wraper h1 {
@@ -983,7 +993,8 @@ section button {
 .values-description {
     display: flex;
     height: 24vh;
-    padding-top: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 0vh;
     justify-content: center;
     font-size: 2.85VW;
     font-style: bold;
