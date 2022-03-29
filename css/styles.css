@@ -2328,7 +2328,7 @@ footer {
     .main__content h2 {
         font-size: 12vw;
         margin-top: -2rem;
-        color: #feef3c !important;
+        color: #feef3c;
     }
     .main__content p {
         margin-top: -0.2rem;
@@ -2336,9 +2336,10 @@ footer {
         font-weight: 400;
         color: #ddd2d2 !important;
     }
-    .main__btn button {
+    .main__content .main__btn button {
         display: flex;
-        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
     }
     /* Animation */
     .anim-typewriter {
