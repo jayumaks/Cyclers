@@ -2337,9 +2337,7 @@ footer {
         color: #ddd2d2 !important;
     }
     .main__content .main__btn button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 5px;
     }
     /* Animation */
     .anim-typewriter {
@@ -2368,10 +2366,10 @@ footer {
         animation-iteration-count: infinite;
     }
     #main__img {
-        margin-top: -100px;
+        margin-top: -70px;
         height: 10%;
         width: 70%;
-        padding-bottom: -1000px;
+        margin-bottom: -1rem;
     }
     @keyframes rotate {
         0% {
@@ -2388,24 +2386,23 @@ footer {
         }
     }
     section .services {
-        height: fit-content;
         background-attachment: fixed;
         width: 100%;
     }
     .service__tag {
-        padding: 5px 0 0 0;
+        padding: 205px 0;
     }
     .service__tag p {
         color: #000 !important;
-        font-size: 20px;
-        margin-top: 50px;
+        font-size: 22px;
+        margin-top: 5px;
     }
     .service__tag h1 {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 2px;
     }
     .container-serve {
-        margin-top: 50px;
+        margin-top: -300px;
         position: relative;
         width: 100%;
         padding: 1px 40px 40px 10px;
