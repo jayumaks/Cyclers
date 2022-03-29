@@ -210,10 +210,11 @@ body {
 }
 
 .video-container {
-    width: 40%;
+    width: 100%;
     padding: 10px;
-    background: white;
-    display: inline-table;
+    background: rgba(16, 14, 14, 0.138);
+    display: flex;
+    background-color: transparent;
 }
 
 .responsive-video {
