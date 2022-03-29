@@ -1051,7 +1051,7 @@ a:focus {
 .container p {
     padding: 0;
     margin: 0 0 15px 0;
-    color: #454545;
+    color: #d03b3b;
     font-weight: 300;
     font-family: 'Righteous';
 }
@@ -2317,7 +2317,11 @@ footer {
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
     .main__container {
         margin-top: -100px;
     }
@@ -2474,6 +2478,7 @@ footer {
     }
     .values-wraper h1 {
         color: white;
+        font-size: 20px;
     }
     .values-wraper p {
         font-size: 15px;
@@ -2498,7 +2503,7 @@ footer {
         color: #000;
     }
     .works-and-clients {
-        height: 200vh;
+        height: 900vh;
     }
     .work-and-client-header {
         font-size: 4.3vw;
@@ -2525,7 +2530,7 @@ footer {
     }
     .grid-cointainer {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         max-width: 400%;
     }
     .grid-item {
