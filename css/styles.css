@@ -1051,7 +1051,7 @@ a:focus {
 .container p {
     padding: 0;
     margin: 0 0 15px 0;
-    color: #d03b3b;
+    color: #454545;
     font-weight: 300;
     font-family: 'Righteous';
 }
@@ -1200,7 +1200,8 @@ h6 {
     font-size: 0;
 }
 
-#loadMore {
+
+/* #loadMore {
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
@@ -1224,7 +1225,7 @@ h6 {
 
 .hidden {
     display: none;
-}
+} */
 
 
 /*.team:hover .team-social{
@@ -2503,7 +2504,7 @@ footer {
         color: #000;
     }
     .works-and-clients {
-        height: 900vh;
+        height: 350vh;
     }
     .work-and-client-header {
         font-size: 4.3vw;
