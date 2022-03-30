@@ -503,6 +503,7 @@ img {
     padding-right: 50px;
     padding-left: 50px;
     overflow: hidden;
+    margin-bottom: -100px;
 }
 
 .main__content {
@@ -512,7 +513,7 @@ img {
 
 .main__content h1 {
     font-size: 9vw;
-    margin-top: 25px;
+    margin-top: -105px;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1570,7 +1571,7 @@ footer {
 }
 
 .social__media {
-    height: 25%;
+    height: 5%;
     width: 100%;
 }
 
@@ -2519,7 +2520,7 @@ footer {
         display: grid;
         grid-template-columns: auto;
         height: 80vh;
-        row-gap: 20px;
+        row-gap: 40px;
         justify-content: center;
         align-items: center;
         align-content: space-between;
@@ -2541,7 +2542,7 @@ footer {
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 150px;
     }
     .values-btn a {
         color: black;
@@ -2574,7 +2575,7 @@ footer {
         background-color: #ffffff;
         display: grid;
         justify-content: center;
-        padding-bottom: 1200px;
+        padding-bottom: 1250px;
     }
     .grid-cointainer {
         display: grid;
@@ -2608,7 +2609,7 @@ footer {
         padding-top: 0.5px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: -350px;
+        margin-top: -90px;
     }
     #loadMore {
         padding-bottom: 30px;
