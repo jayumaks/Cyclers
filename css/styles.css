@@ -1200,8 +1200,7 @@ h6 {
     font-size: 0;
 }
 
-
-/* #loadMore {
+#loadMore {
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
@@ -1225,7 +1224,7 @@ h6 {
 
 .hidden {
     display: none;
-} */
+}
 
 
 /*.team:hover .team-social{
@@ -1697,6 +1696,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
     .MessageInfo {
         color: #f2f2f3;
         font-size: 1px;
@@ -2026,13 +2029,20 @@ footer {
 }
 
 @media only screen and (max-width: 425px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    .main__container {
+        margin-top: -100px;
+    }
     .main__content h1 {
         font-size: 19vw;
-        margin-top: 25px;
+        margin-top: 2rem;
     }
     .main__content h2 {
-        font-size: 15vw;
-        margin-top: 5px;
+        font-size: 12vw;
+        margin-top: 1px;
         color: #feef3c !important;
     }
     .main__content p {
@@ -2069,7 +2079,7 @@ footer {
     }
     #main__img {
         margin-top: 100px;
-        height: 70%;
+        height: 170%;
         width: 70%;
     }
     @keyframes rotate {
@@ -2223,11 +2233,11 @@ footer {
         background-color: #ffffff;
         display: grid;
         justify-content: center;
-        padding-bottom: 400px;
+        padding-bottom: 1200px;
     }
     .grid-cointainer {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
         max-width: 400%;
     }
     .grid-item {
@@ -2249,6 +2259,37 @@ footer {
         font-style: normal;
         line-height: 5.8vw;
         letter-spacing: 0em;
+    }
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 0.5px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 800px;
+    }
+    #loadMore {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    #loadMore a {
+        background: #feef3c;
+        border-radius: 3px;
+        color: #151516;
+        display: inline-block;
+        padding: 10px 30px;
+        transition: all 0.25s ease-out;
+        -webkit-font-smoothing: antialiased;
+    }
+    #loadMore a:hover {
+        background-color: #151516;
+        color: #e3e3e3;
+    }
+    .hidden {
+        display: none;
     }
     .contact {
         width: 100%;
@@ -2527,7 +2568,7 @@ footer {
         background-color: #ffffff;
         display: grid;
         justify-content: center;
-        padding-bottom: 400px;
+        padding-bottom: 1200px;
     }
     .grid-cointainer {
         display: grid;
@@ -2553,6 +2594,37 @@ footer {
         font-style: normal;
         line-height: 5.8vw;
         letter-spacing: 0em;
+    }
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 0.5px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -350px;
+    }
+    #loadMore {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    #loadMore a {
+        background: #feef3c;
+        border-radius: 3px;
+        color: #151516;
+        display: inline-block;
+        padding: 10px 30px;
+        transition: all 0.25s ease-out;
+        -webkit-font-smoothing: antialiased;
+    }
+    #loadMore a:hover {
+        background-color: #151516;
+        color: #e3e3e3;
+    }
+    .hidden {
+        display: none;
     }
     .contact {
         width: 100%;
