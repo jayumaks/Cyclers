@@ -6,15 +6,13 @@ if (isset($_POST['arrival'], $_POST['departure'], $_POST['first_name'], $_POST['
 	// Process form data
 
     // Assign POST variables
-$arrival = htmlspecialchars($_POST['arrival'], ENT_QUOTES);
-$departure = htmlspecialchars($_POST['departure'], ENT_QUOTES);
+
 $first_name = htmlspecialchars($_POST['first_name'], ENT_QUOTES);
 $last_name = htmlspecialchars($_POST['last_name'], ENT_QUOTES);
 $email = htmlspecialchars($_POST['email'], ENT_QUOTES);
 $phone = htmlspecialchars($_POST['phone'], ENT_QUOTES);
-$adults = htmlspecialchars($_POST['adults'], ENT_QUOTES);
-$children = htmlspecialchars($_POST['children'], ENT_QUOTES);
-$room_pref = htmlspecialchars($_POST['room_pref'], ENT_QUOTES);
+$message = htmlspecialchars($_POST['message'], ENT_QUOTES);
+
 
 // Validate email adress
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

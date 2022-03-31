@@ -1314,7 +1314,7 @@ h6 {
 
 .values-btn {
     border: none;
-    width: 12.375vw;
+    width: 19.375vw;
     text-decoration: none;
     padding: 10px;
     font-family: 'Righteous', cursive;
@@ -1327,7 +1327,7 @@ h6 {
 
 .values-btn a {
     color: black;
-    font-size: .9VW;
+    font-size: 1.VW;
     text-decoration: none;
 }
 

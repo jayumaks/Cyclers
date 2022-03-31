@@ -571,13 +571,9 @@ button {
     }
     .footer__container {
         padding-bottom: 14rem;
-        margin-top: -1rem;
-    }
-    .footer__link--wrapper {
-        margin-top: -7rem;
     }
     .footer__link--items {
-        margin-top: 0.5rem;
+        margin-top: -110.5rem;
         line-height: 2.9rem;
     }
     .footer__link--items a {
