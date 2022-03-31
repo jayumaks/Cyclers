@@ -191,7 +191,7 @@ img {
 }
 
 .navbar__menu .login-container button {
-    float: right;
+    float: inline-end;
     padding: 16px 10px;
     margin-top: 8px;
     margin-right: 16px;
@@ -2033,9 +2033,9 @@ footer {
     body {
         overflow-x: hidden;
     }
-    .login-container {
+    /* .login-container {
         display: none;
-    }
+    } */
     .main__container {
         margin-top: -100px;
     }
@@ -2366,9 +2366,9 @@ footer {
     body {
         overflow-x: hidden;
     }
-    .login-container {
+    /* .login-container {
         display: none;
-    }
+    } */
     .main__container {
         margin-top: -100px;
     }

@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-body,
-html {
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -114,16 +113,16 @@ body {
 }
 
 .navbar__menu .login-container button {
-    float: left;
-    padding: 26px 80px;
+    float: inline-end;
+    padding: 6px 6 px;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 6px;
     background-color: #feef3c;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 15px;
     border: none;
-    border-radius: 17px;
+    border-radius: 107px;
     cursor: pointer;
 }
 
@@ -133,8 +132,8 @@ body {
 }
 
 .navbar__menu .login-container button:hover {
-    background-color: rgb(3, 9, 3);
-    color: rgb(255, 255, 255) !important;
+    background-color: rgb(15, 16, 15);
+    color: white;
 }
 
 @media screen and (max-width: 768px) {
@@ -553,7 +552,7 @@ button {
     }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
     .list-item {
         margin-bottom: 10%;
     }
