@@ -1,0 +1,22 @@
+{
+    "name": "cyclers",
+    "version": "1.0.0",
+    "description": "scss for cyclers",
+    "main": "index.html",
+    "scripts": {
+        "sass": "node-sass -w scss/ -o css/ --recursive"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jayumaks/Cyclers.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jayumaks/Cyclers/issues"
+    },
+    "homepage": "https://github.com/jayumaks/Cyclers#readme",
+    "dependencies": {
+        "node-sass": "^7.0.1"
+    }
+}

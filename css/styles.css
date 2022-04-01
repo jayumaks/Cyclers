@@ -4,7 +4,7 @@
 
 body {
     background-color: #1b1b1c;
-    font-family: 'Righteous';
+    font-family: '';
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -240,7 +240,7 @@ img {
 .navbar__links:hover {
     color: #feef3c;
     transition: all 0.5s ease;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -250,7 +250,8 @@ img {
     max-width: 100%;
     height: 100%;
     position: relative;
-    margin: 100px auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 
@@ -676,6 +677,93 @@ img {
     }
 }
 
+.containerss {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+}
+
+.carousell {
+    position: absolute;
+    width: 100%;
+    height: 700%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+
+.carousell__face {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+span {
+    margin: auto;
+    font-size: 1.5rem;
+    color: #feef3c;
+}
+
+.carousell__face:nth-child(1) {
+    background-image: url("../sound_production/images/2.jpeg");
+    transform: rotateY( 0deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(2) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.52\ PM.jpeg");
+    transform: rotateY( 40deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(3) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.53\ PM.jpeg");
+    transform: rotateY( 80deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(4) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.53\ PM.jpeg");
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(5) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.55\ PM.jpeg");
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(6) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.56\ PM.jpeg");
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(7) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.56\ PM.jpeg");
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(8) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.57\ PM.jpeg");
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousell__face:nth-child(9) {
+    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.58\ PM.jpeg");
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
 .container-serve {
     position: relative;
     width: 100%;
@@ -884,7 +972,7 @@ p {
 
 section .services {
     background: #ffffff;
-    background-image: url('/images/sound-wave1.png');
+    background-image: url('/images/IMG_0452.jpg');
     background-repeat: no-repeat;
     background-position-y: bottom;
     display: flex;
@@ -892,14 +980,14 @@ section .services {
     justify-content: center;
     align-items: center;
     height: 130vh;
-    background-attachment: scroll;
+    background-attachment: fixed;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     padding: auto;
 }
 
 .services h1 {
-    background-color: #000000;
+    background-color: #fffefe;
     font-family: 'Righteous';
     background-size: 100%;
     -webkit-background-clip: text;
@@ -918,9 +1006,8 @@ section .services {
 
 .service__tag {
     padding-top: 100px;
-    color: #000;
+    color: rgb(239, 231, 231);
     text-align: center;
-    text-decoration: line-through;
     text-decoration-color: #feef3c;
     text-decoration-thickness: 3px;
     margin-top: -172px;
@@ -934,7 +1021,7 @@ section button {
 }
 
 .service__tag p {
-    color: #000 !important;
+    color: rgb(255, 255, 255) !important;
     font-size: 30px;
 }
 
@@ -972,6 +1059,7 @@ section button {
     background-attachment: fixed;
     background-size: cover;
     padding: 140px 0px;
+    height: 1000px;
 }
 
 .values:before {
@@ -1319,7 +1407,7 @@ h6 {
     padding: 10px;
     font-family: 'Righteous', cursive;
     background-color: #FFF112;
-    margin-top: 90px;
+    margin-top: 500px;
     cursor: pointer;
     position: relative;
     left: 33vw;
@@ -1361,7 +1449,7 @@ p {
     text-align: center;
     color: #1a1919;
     background-color: #ffffff;
-    text-decoration: line-through;
+    text-decoration: none;
     text-decoration-color: #feef3c;
     text-decoration-thickness: 5px;
     padding-bottom: auto;
@@ -2036,6 +2124,10 @@ footer {
     /* .login-container {
         display: none;
     } */
+    .slideshow-container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
     .main__container {
         margin-top: -100px;
     }
@@ -2162,30 +2254,8 @@ footer {
     .box-serve .content-serve a:hover {
         border-radius: 70px;
     }
-    .all-in-one {
-        width: 50%;
-    }
-    .all-in-one iframe {
-        display: none;
-    }
     .values-description {
-        margin-top: -100px;
-        display: grid;
-        grid-template-columns: auto;
-        height: 14vh;
-        padding-top: 1px;
-        justify-content: center;
-        font-size: 4.85VW;
-    }
-    .what-we-have,
-    .what-we-offer {
-        display: grid;
-        grid-template-columns: auto;
-        height: 80vh;
-        row-gap: 20px;
-        justify-content: center;
-        align-items: center;
-        align-content: space-between;
+        font-size: 5vh;
     }
     .values-wraper h1 {
         color: white;
@@ -2203,7 +2273,7 @@ footer {
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 600px;
     }
     .values-btn a {
         color: black;
@@ -2369,6 +2439,10 @@ footer {
     /* .login-container {
         display: none;
     } */
+    .slideshow-container {
+        margin-top: 100px;
+        margin-bottom: -50px;
+    }
     .main__container {
         margin-top: -100px;
     }
@@ -2417,10 +2491,7 @@ footer {
         animation-iteration-count: infinite;
     }
     #main__img {
-        margin-top: -100px;
-        height: 10%;
-        width: 60%;
-        margin-bottom: 177.5rem;
+        display: none;
     }
     @keyframes rotate {
         0% {
