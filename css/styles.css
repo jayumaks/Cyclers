@@ -1190,16 +1190,7 @@ h6 {
     color: #feef3c;
     margin: 0 0 5px;
     position: relative;
-}
-
-.section-title h1::before {
-    content: '';
-    left: 0;
-    position: absolute;
-    height: 3px;
-    right: 32%;
-    background-color: #feef3c;
-    bottom: -5px;
+    text-decoration: none;
 }
 
 .container .section-title h1::before {
@@ -1439,6 +1430,20 @@ p {
     color: white;
 }
 
+.workss {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.workss ::before {
+    content: '';
+    position: absolute;
+    background-image: url(/images/eventss.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(80px);
+}
+
 .work-and-client-header {
     font-family: 'Righteous';
     font-size: 3.3vw;
@@ -1447,16 +1452,12 @@ p {
     line-height: 9.463vw;
     letter-spacing: 0em;
     text-align: center;
-    color: #1a1919;
-    background-color: #ffffff;
+    color: #ffffff;
     text-decoration: none;
-    text-decoration-color: #feef3c;
-    text-decoration-thickness: 5px;
     padding-bottom: auto;
 }
 
 .works-and-clients-text {
-    background-color: #d0cbcb;
     padding-bottom: 0px;
     width: 100%;
     padding: 30px 30px 30px 30px;
@@ -1465,13 +1466,12 @@ p {
 }
 
 .works-and-clients-text p {
-    color: rgba(0, 0, 0, 0.987) !important;
+    color: rgba(255, 255, 255, 0.987) !important;
     text-align: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 .work-sample-grid {
-    background-color: #ffffff;
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
