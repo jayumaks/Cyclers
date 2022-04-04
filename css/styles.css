@@ -1988,7 +1988,6 @@ footer {
         justify-content: left !important;
     }
     .work-sample-grid {
-        background-color: #ffffff;
         display: grid;
         justify-content: center;
         padding-bottom: 100px;
@@ -2278,6 +2277,38 @@ footer {
     .values-btn a:hover {
         color: #000;
     }
+    .values-wraper {
+        height: 140vh;
+    }
+    .containerss {
+        position: relative;
+        width: 200px;
+        margin: 100px 0 0 0;
+        perspective: 1000px;
+    }
+    .carousell {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        animation: rotate360 60s infinite forwards linear;
+    }
+    .carousell__face {
+        position: absolute;
+        width: 200px;
+        height: 187px;
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        background-size: contain;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+        display: flex;
+    }
+    span {
+        margin: auto;
+        font-size: 1.2rem;
+        color: #feef3c;
+    }
     .works-and-clients {
         height: 200vh;
     }
@@ -2299,7 +2330,6 @@ footer {
         justify-content: left !important;
     }
     .work-sample-grid {
-        background-color: #ffffff;
         display: grid;
         justify-content: center;
         padding-bottom: 1200px;
@@ -2574,7 +2604,7 @@ footer {
         margin-top: -100px;
         display: grid;
         grid-template-columns: auto;
-        height: 14vh;
+        height: 10vh;
         padding-top: 1px;
         justify-content: center;
         font-size: 4.85VW;
@@ -2606,7 +2636,7 @@ footer {
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin-top: 150px;
+        margin-top: 600px;
     }
     .values-btn a {
         color: black;
@@ -2636,7 +2666,6 @@ footer {
         justify-content: left !important;
     }
     .work-sample-grid {
-        background-color: #ffffff;
         display: grid;
         justify-content: center;
         padding-bottom: 1250px;
