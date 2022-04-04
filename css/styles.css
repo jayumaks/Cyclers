@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: #1b1b1c;
-    font-family: 'Righteous';
+    font-family: "Titillium Web", sans-serif;
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -371,7 +372,7 @@ img {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(182, 179, 179);
     color: #1B1B1C;
-    font-family: 'Righteous', cursive;
+    font-family: "Titillium Web", sans-serif;
     height: 14vh;
 }
 
@@ -711,47 +712,47 @@ span {
 }
 
 .carousell__face:nth-child(1) {
-    background-image: url("../sound_production/images/2.jpeg");
+    background-image: url("../circle_images/1.jpeg");
     transform: rotateY( 0deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(2) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.52\ PM.jpeg");
+    background-image: url("../circle_images/2.jpg");
     transform: rotateY( 40deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(3) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.53\ PM.jpeg");
+    background-image: url("../circle_images/3.jpeg");
     transform: rotateY( 80deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(4) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.53\ PM.jpeg");
+    background-image: url("../circle_images/4.jpg");
     transform: rotateY(120deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(5) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.55\ PM.jpeg");
+    background-image: url("../circle_images/5.jpg");
     transform: rotateY(160deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(6) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.56\ PM.jpeg");
+    background-image: url("../circle_images/6.jpg");
     transform: rotateY(200deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(7) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.56\ PM.jpeg");
+    background-image: url("../circle_images/7.jpg");
     transform: rotateY(240deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(8) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.57\ PM.jpeg");
+    background-image: url("../circle_images/8.jpg");
     transform: rotateY(280deg) translateZ(430px);
 }
 
 .carousell__face:nth-child(9) {
-    background-image: url("../sound_production/images/WhatsApp\ Image\ 2022-03-25\ at\ 8.05.58\ PM.jpeg");
+    background-image: url("../circle_images/9.jpg");
     transform: rotateY(320deg) translateZ(430px);
 }
 
@@ -912,6 +913,10 @@ p {
     background: #feef3c;
 }
 
+.sli {
+    background-image: url(../images/11.jpg);
+}
+
 
 /* Mobile Responsive */
 
@@ -988,7 +993,6 @@ section .services {
 
 .services h1 {
     background-color: #fffefe;
-    font-family: 'Righteous';
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1053,8 +1057,6 @@ section button {
 
 .values-wraper {
     background-color: #0c0c0c;
-    background-image: url(/images/3.jpeg);
-    background-repeat: no-repeat;
     background-position: contain;
     background-attachment: fixed;
     background-size: cover;
@@ -1092,7 +1094,6 @@ section button {
     line-height: 50px;
     letter-spacing: 0em;
     text-align: center;
-    font-family: 'Righteous';
 }
 
 .values {
@@ -1101,7 +1102,6 @@ section button {
 }
 
 .values p {
-    font-family: 'Righteous';
     font-size: 1.1VW;
     font-style: normal;
     font-weight: 450;
@@ -1143,7 +1143,6 @@ a:focus {
     margin: 0 0 15px 0;
     color: #454545;
     font-weight: 300;
-    font-family: 'Righteous';
 }
 
 .container h1,
@@ -1156,7 +1155,6 @@ h6 {
     margin: 0 0 15px 0;
     color: #333333;
     font-weight: 700;
-    font-family: 'Righteous';
 }
 
 .container img {
@@ -1396,7 +1394,6 @@ h6 {
     width: 19.375vw;
     text-decoration: none;
     padding: 10px;
-    font-family: 'Righteous', cursive;
     background-color: #FFF112;
     margin-top: 500px;
     cursor: pointer;
@@ -1431,13 +1428,17 @@ p {
 }
 
 .workss {
+    background-image: url(/images/eventss.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.workss ::before {
+.workss ::after {
     content: '';
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.198);
     background-image: url(/images/eventss.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1445,7 +1446,6 @@ p {
 }
 
 .work-and-client-header {
-    font-family: 'Righteous';
     font-size: 3.3vw;
     font-style: normal;
     font-weight: 500;
@@ -1545,7 +1545,6 @@ p {
 }
 
 .grid-item h4 {
-    font-family: 'Righteous';
     font-size: 1VW;
     font-style: normal;
     width: 200px;
@@ -1557,7 +1556,6 @@ p {
 }
 
 .grid-item p {
-    font-family: 'Righteous';
     padding-top: 10px;
     font-size: 1.8VW;
     font-style: normal;
@@ -1719,7 +1717,6 @@ footer {
 
 .contact h5 {
     font-size: 1.5rem;
-    font-family: "Righteous";
     margin-bottom: 1rem;
     color: white;
 }
@@ -2005,7 +2002,6 @@ footer {
         max-width: 400%;
     }
     .grid-item h4 {
-        font-family: 'Righteous';
         font-size: 2vw;
         font-style: normal;
         width: 200px;
@@ -2317,7 +2313,6 @@ footer {
         max-width: 100%;
     }
     .grid-item h4 {
-        font-family: 'Righteous';
         font-size: 1vw;
         font-style: normal;
         width: 200px;
@@ -2655,7 +2650,6 @@ footer {
         max-width: 100%;
     }
     .grid-item h4 {
-        font-family: 'Righteous';
         font-size: 1vw;
         font-style: normal;
         width: 200px;
