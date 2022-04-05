@@ -1594,6 +1594,7 @@ p {
 .social__media {
     height: 5%;
     width: 100%;
+    font-family: "Righteous";
 }
 
 .social__media--wrap {
@@ -1627,6 +1628,10 @@ p {
 .website__rights {
     color: #fff;
     padding-right: 50px;
+}
+
+.footer__link--wrapper {
+    display: flex;
 }
 
 .footer-logo-container img {
@@ -2414,9 +2419,10 @@ p {
         }
     }
     section .services {
-        background-attachment: fixed;
+        background-attachment: scroll;
         width: 100%;
         overflow-x: hidden;
+        height: 200vh;
     }
     .service__tag {
         padding: 205px 0;
@@ -2482,20 +2488,24 @@ p {
     .all-in-one iframe {
         display: none;
     }
+    .scroll-element {
+        height: 400vh;
+    }
     .values-description {
         margin-top: -100px;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         height: 10vh;
-        padding-top: 1px;
-        justify-content: center;
+        padding-top: -100px;
+        justify-content: left;
         font-size: 4.85VW;
+        background-image: cover;
     }
     .what-we-have,
     .what-we-offer {
         display: grid;
         grid-template-columns: auto;
-        height: 80vh;
+        height: 10vh;
         row-gap: 40px;
         justify-content: center;
         align-items: center;
@@ -2510,7 +2520,8 @@ p {
     }
     .values {
         width: 90vw;
-        margin: auto;
+        margin: 900px 900px;
+        display: grid;
     }
     .values-btn {
         border: none;
@@ -2518,7 +2529,7 @@ p {
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin-top: 600px;
+        margin-top: 300px;
     }
     .values-btn a {
         color: black;
