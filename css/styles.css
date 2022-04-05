@@ -1442,6 +1442,10 @@ p {
     color: white;
 }
 
+.cont a {
+    color: #feef3c;
+}
+
 .works-and-clients {
     background-color: white;
     font-family: 'Righteous';
@@ -1732,6 +1736,11 @@ p {
     body {
         overflow-x: hidden;
     }
+    .slideshow-container {
+        height: 90vh;
+        margin-bottom: 1px;
+        margin-top: 1px;
+    }
     .MessageInfo {
         color: #f2f2f3;
         font-size: 1px;
@@ -1741,7 +1750,7 @@ p {
     }
     .main__content h1 {
         font-size: 9vw;
-        margin-top: 25px;
+        margin-top: 1px;
         background-size: 100%;
         -webkit-background-clip: text;
         -moz-background-clip: text;
@@ -1796,11 +1805,7 @@ p {
         }
     }
     .wave {
-        width: 100%;
-        opacity: 9;
-        animation-duration: 10s;
-        animation-name: rotate;
-        animation-iteration-count: infinite;
+        display: none;
     }
     .art img {
         height: 500px;
@@ -1826,7 +1831,12 @@ p {
         }
     }
     .services {
+        overflow-x: hidden;
         width: 100%;
+        padding-bottom: -10000px;
+    }
+    .services__container {
+        margin-bottom: -400px;
     }
     .service__tag {
         padding: 5px 0 0 0;
@@ -1843,7 +1853,7 @@ p {
     .container-serve {
         position: relative;
         width: 100%;
-        padding: 10px 40px 40px 10px;
+        padding: 50px 40px 40px 10px;
     }
     .container-serve .box-serve1 {
         position: relative;
@@ -1945,6 +1955,7 @@ p {
     }
     .grid-item {
         max-width: 400%;
+        grid-column: 80px;
     }
     .grid-item h4 {
         font-size: 2vw;
@@ -1961,6 +1972,13 @@ p {
         font-style: normal;
         line-height: 2.8vw;
         letter-spacing: 0em;
+    }
+    .container .row .column {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    #loadMore {
+        display: none;
     }
     .social__media {
         height: 25%;
@@ -2077,7 +2095,7 @@ p {
         }
     }
     section .services {
-        height: fit-content;
+        height: 210vh;
         background-attachment: fixed;
         width: 100%;
     }
@@ -2142,8 +2160,12 @@ p {
     .values-description {
         font-size: 5vh;
     }
+    .assurance-we-have .assurance-of-what-we-offer {
+        line-height: 1000vh;
+    }
     .values-wraper h1 {
         color: white;
+        font-size: 20px;
     }
     .values-wraper p {
         font-size: 15px;
@@ -2158,7 +2180,7 @@ p {
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin-top: 600px;
+        margin-top: 100px;
     }
     .values-btn a {
         color: black;
@@ -2168,7 +2190,10 @@ p {
         color: #000;
     }
     .values-wraper {
-        height: 140vh;
+        height: 180vh;
+    }
+    .all-in-one {
+        display: none;
     }
     .containerss {
         position: relative;
@@ -2200,7 +2225,7 @@ p {
         color: #feef3c;
     }
     .works-and-clients {
-        height: 200vh;
+        height: 320vh;
     }
     .work-and-client-header {
         font-size: 4.3vw;
@@ -2220,6 +2245,7 @@ p {
         justify-content: left !important;
     }
     .work-sample-grid {
+        margin-top: 5vh;
         display: grid;
         justify-content: center;
         padding-bottom: 1200px;
@@ -2255,7 +2281,7 @@ p {
         padding-top: 0.5px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 800px;
+        margin-top: 50px;
     }
     #loadMore {
         padding-bottom: 30px;
@@ -2279,41 +2305,9 @@ p {
     .hidden {
         display: none;
     }
-    .contact {
+    .slider {
         width: 100%;
-        height: 15.25rem;
-        background: linear-gradient(180deg, rgb(79, 77, 77) 0%, rgba(255, 255, 255, 0) 100%);
-        border-radius: 50px;
-        padding: 5% 5%;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    .contact input {
-        width: 7rem;
-        height: 54px;
-        border-radius: 50px;
-        border: none;
-        background: rgba(26, 24, 24, 0.371);
-        padding-left: 10%;
-    }
-    .contact input::placeholder {
-        font-size: 0.8rem;
-    }
-    .input-div {
-        position: relative;
-    }
-    .send-div {
-        width: 1.813rem;
-        height: 54px;
-        background-color: #feef3c;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        position: absolute;
-        right: 0;
-        top: 0;
+        height: 1000vh;
     }
     /* Footer CSS */
     .footer__link--wrapper .iframez {
