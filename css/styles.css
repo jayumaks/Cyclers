@@ -1073,16 +1073,6 @@ section button {
     font-family: "Righteous";
 }
 
-.values:before {
-    content: '';
-    position: fixed;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 0px;
-    right: 0;
-    bottom: 0px;
-    left: 0;
-}
-
 .values-wraper h1 {
     color: #f0f0ef;
     margin-top: -100px;
@@ -1996,6 +1986,20 @@ p {
         justify-content: right;
         align-items: rights;
     }
+    .footer-links {
+        font-size: 12px;
+        width: 140vw;
+        margin: 0 auto 20px auto;
+        background-color: black;
+        padding-top: 10px;
+    }
+    .location {
+        display: none;
+    }
+    .footer-link {
+        margin-left: 20px;
+        width: 60px;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -2539,7 +2543,7 @@ p {
         color: #000;
     }
     .works-and-clients {
-        height: 400vh;
+        height: 350vh;
     }
     .work-and-client-header {
         font-size: 4.3vw;
@@ -2561,7 +2565,7 @@ p {
     .work-sample-grid {
         display: grid;
         justify-content: center;
-        padding-bottom: 1250px;
+        margin-top: 50px;
     }
     .grid-cointainer {
         display: grid;
@@ -2594,7 +2598,7 @@ p {
         padding-top: 0.5px;
         margin-right: auto;
         margin-left: auto;
-        margin-top: -400px;
+        margin-top: -10px;
     }
     #loadMore {
         padding-bottom: 30px;
