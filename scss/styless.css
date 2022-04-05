@@ -16,20 +16,6 @@
     }
 }
 
-.sectio {
-    display: inline-block;
-    font-size: 25px;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #1b1b1b;
-    text-decoration: line-through;
-    text-decoration-color: #feef3c;
-}
-
-.sectio h1 {
-    text-align: center;
-}
-
 .slider {
     background: rgb(255, 251, 251);
     height: 100px;
