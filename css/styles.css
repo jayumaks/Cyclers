@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: #1b1b1c;
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Righteous";
     max-width: 100%;
     margin: 0;
     padding: 0;
@@ -129,6 +128,7 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    font-family: 'Righteous';
     position: sticky;
     top: 0;
     width: 100%;
@@ -253,6 +253,7 @@ img {
     position: relative;
     margin-top: 50px;
     margin-bottom: 100px;
+    font-family: "Righteous";
 }
 
 
@@ -372,8 +373,8 @@ img {
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(182, 179, 179);
     color: #1B1B1C;
-    font-family: "Titillium Web", sans-serif;
-    height: 14vh;
+    font-family: "Righteous", sans-serif;
+    height: 10vh;
 }
 
 @media screen and (max-width: 960px) {
@@ -766,6 +767,7 @@ span {
 }
 
 .container-serve {
+    margin-top: -100px;
     position: relative;
     width: 100%;
     padding: 40px 40px 40px 40px;
@@ -914,7 +916,7 @@ p {
 }
 
 .sli {
-    background-image: url(../images/11.jpg);
+    background-color: white;
 }
 
 
@@ -977,22 +979,27 @@ p {
 
 section .services {
     background: #ffffff;
-    background-image: url('/images/IMG_0452.jpg');
+    background-image: url('/images/sound-wave1.png');
     background-repeat: no-repeat;
     background-position-y: bottom;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 130vh;
-    background-attachment: fixed;
+    height: 140vh;
+    background-attachment: scroll;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
     padding: auto;
+    font-family: 'Righteous';
+}
+
+.services__container {
+    margin-bottom: -150px;
 }
 
 .services h1 {
-    background-color: #fffefe;
+    background-color: #1b1b1b;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -1012,9 +1019,7 @@ section .services {
     padding-top: 100px;
     color: rgb(239, 231, 231);
     text-align: center;
-    text-decoration-color: #feef3c;
-    text-decoration-thickness: 3px;
-    margin-top: -172px;
+    margin-top: -350px;
 }
 
 section button {
@@ -1025,7 +1030,10 @@ section button {
 }
 
 .service__tag p {
-    color: rgb(255, 255, 255) !important;
+    text-decoration: line-through;
+    text-decoration-color: #feef3c;
+    text-decoration-thickness: 5px;
+    color: #1b1b1b !important;
     font-size: 30px;
 }
 
@@ -1056,18 +1064,19 @@ section button {
 }
 
 .values-wraper {
-    background-color: #0c0c0c;
+    background-image: url(../images/3.jpeg);
     background-position: contain;
     background-attachment: fixed;
     background-size: cover;
     padding: 140px 0px;
-    height: 1000px;
+    height: 200vh;
+    font-family: "Righteous";
 }
 
 .values:before {
     content: '';
     position: fixed;
-    background: rgba(196, 113, 113, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 0px;
     right: 0;
     bottom: 0px;
@@ -1395,7 +1404,7 @@ h6 {
     text-decoration: none;
     padding: 10px;
     background-color: #FFF112;
-    margin-top: 500px;
+    margin-top: 100px;
     cursor: pointer;
     position: relative;
     left: 33vw;
@@ -1427,54 +1436,44 @@ p {
     color: white;
 }
 
-.workss {
-    background-image: url(/images/eventss.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.workss ::after {
-    content: '';
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.198);
-    background-image: url(/images/eventss.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(80px);
+.works-and-clients {
+    background-color: white;
+    font-family: 'Righteous';
 }
 
 .work-and-client-header {
     font-size: 3.3vw;
     font-style: normal;
-    font-weight: 500;
-    line-height: 9.463vw;
-    letter-spacing: 0em;
+    font-weight: 400;
+    text-decoration: line-through;
+    text-decoration-color: #feef3c;
+    line-height: 3.463vw;
+    letter-spacing: 0.12em;
+    justify-content: left;
     text-align: center;
-    color: #ffffff;
-    text-decoration: none;
+    color: #0a0a0a;
     padding-bottom: auto;
 }
 
 .works-and-clients-text {
     padding-bottom: 0px;
-    width: 100%;
+    width: 50%;
     padding: 30px 30px 30px 30px;
     color: #080808;
     position: relative;
 }
 
 .works-and-clients-text p {
-    color: rgba(255, 255, 255, 0.987) !important;
+    color: rgba(14, 13, 13, 0.987) !important;
     text-align: center;
-    justify-content: center;
 }
 
 .work-sample-grid {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
+    padding-top: 10px;
+    margin-top: -100px;
 }
 
 .grid-cointainer {
@@ -2535,6 +2534,7 @@ footer {
     section .services {
         background-attachment: fixed;
         width: 100%;
+        overflow-x: hidden;
     }
     .service__tag {
         padding: 205px 0;
