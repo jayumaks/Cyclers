@@ -3,23 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="photo.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <title>CYCLERS||STUDIO </title>
 
-    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' />
     <link rel="icon" type="image/png" sizes="132x132" href="../images/cycler1-.png" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:100,300,700" rel="stylesheet">
 
-    <title>CYLERS||PHOTOSHOOT</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+
+
+    <link rel="stylesheet" href="./photo.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
 <body>
+    <div id="fb-root"></div>
 
+    <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="../home.html" id="navbar__logo"><img src="../images/cycler1-.png" alt="" srcset=""></i>
+            <a href="./index.html" id="navbar__logo"><img src="/images/cycler1-.png" alt="" srcset=""></i>
             </a>
             <div class="navbar__toggle" id="mobile-menu">
 
@@ -34,22 +39,22 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="home.html" class="navbar__links">Home</a>
+                    <a href="../index.html" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links">About Us</a>
+                    <a href="../index.html" class="navbar__links">About Us</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#services" class="navbar__links">Services</a>
+                    <a href="../index.html" class="navbar__links">Services</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#contact" class="navbar__links">Contact Us</a>
+                    <a href="../contact_us/contact.html" class="navbar__links">Contact Us</a>
                 </li>
                 <li>
 
                     <div class="login-container">
 
-                        <button class="main__btn" type="submit"><a href="./form/form.css">Book An Appointment</a></button>
+                        <button class="main__btn" type="submit"><a href="../form/form.html">Book An Appointment</a></button>
 
                     </div>
                 </li>
@@ -59,50 +64,140 @@
     </nav>
 
 
-    <section>
-        <div style="margin-top: 20px;">
+    <!-- partial:index.partial.html -->
+    <hr>
+    <div id="gallery" class="container-fluid">
+        <img src="./images/DSC_2570x.jpg" class="img-responsive">
+        <img src="./images/IMG_1090-Recovered.jpg" class="img-responsive">
+        <img src="./images/IMG_9999.jpg" class="img-responsive">
+        <!-- <video class="vid" controls>
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    </source> -->
+        </video> -->
+        <img src="./images/photo_2022-03-17_09-53-36.jpg" class="img-responsive">
+        <img src="./images/4Z9A6639.jpg" class="img-responsive">
+        <img src="./images/Bridal 3.jpg" class="img-responsive">
+        <img src="./images/DSC_0041 (2).jpg" class="card img-responsive">
+        <img src="./images/DSC_0148 (1).jpg" class="img-responsive">
+        <img src="./images/DSC_2485.jpg" class="img-responsive">
+        <img src="./images/DSC_2586.jpg" class="img-responsive">
+        <img src="./images/IMG_0203.jpg" class="img-responsive">
+        <img src="./images/DSC_2570x.jpg" class="img-responsive">
+        <img src="./images/IMG_4538.jpg" class="img-responsive">
+        <img src="./images/IMG_4813.jpg" class="img-responsive">
+        <img src="./images/IMG_3083.jpg" class="img-responsive">
 
-            <figure class="wave">
-                <img src="./images/DSC_2570x.jpg" alt="rajni"></img>
-                <figcaption>Rajinikanth</figcaption>
-            </figure>
+    </div>
 
-            <figure class="wave">
-                <img src="./images/IMG_1090-Recovered.jpg" alt="chuck"></img>
-                <figcaption>Chuck Norris</figcaption>
-            </figure>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-            <figure class="wave">
-                <img src="./images/IMG_9999.jpg" alt="chan"></img>
-                <figcaption>Jackie Chan</figcaption>
-            </figure>
-
-            <figure class="wave">
-                <img src="./images/photo_2022-03-17_09-53-36.jpg" alt="bean"></img>
-                <figcaption>Mr. Bean</figcaption>
-            </figure>
-            <figure class="wave">
-                <img src="./images/DSC_2570x.jpg" alt="rajni"></img>
-                <figcaption>Rajinikanth</figcaption>
-            </figure>
-
-            <figure class="wave">
-                <img src="./images/IMG_1090-Recovered.jpg" alt="chuck"></img>
-                <figcaption>Chuck Norris</figcaption>
-            </figure>
-
-            <figure class="wave">
-                <img src="./images/IMG_9999.jpg" alt="chan"></img>
-                <figcaption>Jackie Chan</figcaption>
-            </figure>
-
-            <figure class="wave">
-                <img src="./images/photo_2022-03-17_09-53-36.jpg" alt="bean"></img>
-                <figcaption>Mr. Bean</figcaption>
-            </figure>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+            </div>
 
         </div>
+    </div>
+    <!-- partial -->
+
+    <section class="footer-and-sponsors">
+        <footer>
+            <div class="footer">
+                <div class="footer-logo-container">
+                    <img src="/images/cycler1-.png" alt="">
+                </div>
+
+
+                <div class="footer-links">
+                    <div class="get-intouch">
+                        <div class="footer-link">
+                            <a href="#">Blog</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">Projects</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="relate-with-us">
+                        <div class="footer-link">
+                            <a href="#">Career</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">FAQs</a>
+                        </div>
+                    </div>
+                    <div class="proof-of-work">
+                        <div class="footer-link">
+                            <a href="#">Portfolio</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">Management</a>
+                        </div>
+                        <div class="footer-link">
+                            <a href="#">Hires</a>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <div class="footer-link">
+                            <h3 class="location">Our location:</h3>
+                            <div>4, Osayogie Street, Opp. NIPCO Filling Station,<br> Isihor, Benin City, Edo State, Nigeria.</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
     </section>
+    <section class="social__media">
+        <div class="social__media--wrap">
+
+
+
+            <p class="website__rights ">© CYCLERS STUDIO.
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </p>
+            <div class="social__icons">
+                <a class="social__icon--link" href="https://web.facebook.com/cyclersstudio" target="_blank" aria-label="Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="social__icon--link" href="https://www.instagram.com/cyclersstudio/?hl=en" target="_blank" aria-label="Instagram">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a class="social__icon--link" href="https://www.youtube.com/channel/UCuWEoYftZapqW8jxqdPJY1Q/featured" target="_blank" aria-label="Youtube">
+                    <i class="fa fa-youtube"></i>
+                </a>
+                <a class="social__icon--link" href="https://twitter.com/CyclersStudio" target="_blank" aria-label="Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <!-- <a
+  class="social__icon--link"
+  href="/"
+  target="_blank"
+  aria-label="LinkedIn"
+>
+  <i class="fab fa-linkedin"></i>
+</a> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="./photo.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.7/js/bootstrap.min.js'></script>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/scroll.js"></script>
+
 
 
 
