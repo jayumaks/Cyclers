@@ -1342,7 +1342,7 @@ section .sectio {
 
 #loadMore a {
     background: #feef3c;
-    border-radius: 3px;
+    border-radius: 9px;
     color: #151516;
     display: inline-block;
     padding: 10px 30px;
@@ -2046,7 +2046,7 @@ p {
     }
     .footer-links {
         font-size: 12px;
-        width: 140vw;
+        width: 100vw;
         margin: 0 auto 20px auto;
         background-color: black;
         padding-top: 10px;
@@ -2076,18 +2076,18 @@ p {
         margin-top: -100px;
     }
     .main__content h1 {
-        font-size: 19vw;
+        font-size: 15vw;
         margin-top: 2rem;
     }
     .main__content h2 {
-        font-size: 12vw;
+        font-size: 10vw;
         margin-top: 1px;
         color: #feef3c !important;
     }
     .main__content p {
         margin-top: 3rem;
-        font-size: 6vw;
-        font-weight: 700;
+        font-size: 5vw;
+        font-weight: 400;
         color: #ddd2d2 !important;
     }
     /* Animation */
@@ -2136,12 +2136,14 @@ p {
         }
     }
     section .services {
-        height: 210vh;
-        background-attachment: fixed;
+        height: 225vh;
+        background-attachment: scroll;
         width: 100%;
     }
     .service__tag {
         padding: 5px 0 0 0;
+        margin-top: -500px;
+        margin-bottom: -100px;
     }
     .service__tag p {
         color: #000 !important;
@@ -2236,37 +2238,13 @@ p {
     .all-in-one {
         display: none;
     }
-    .containerss {
-        position: relative;
-        width: 200px;
-        margin: 100px 0 0 0;
-        perspective: 1000px;
-    }
-    .carousell {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
-        animation: rotate360 60s infinite forwards linear;
-    }
-    .carousell__face {
-        position: absolute;
-        width: 200px;
-        height: 187px;
-        top: 20px;
-        left: 0px;
-        right: 0px;
-        background-size: contain;
-        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-        display: flex;
-    }
     span {
         margin: auto;
         font-size: 1.2rem;
         color: #feef3c;
     }
     .works-and-clients {
-        height: 320vh;
+        height: 355vh;
     }
     .work-and-client-header {
         font-size: 4.3vw;
@@ -2357,7 +2335,7 @@ p {
         font-size: 20px;
     }
     .social__media {
-        height: 25%;
+        height: 15%;
         width: 100%;
     }
     .social__media--wrap {
@@ -2374,7 +2352,22 @@ p {
         color: #fff;
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 15px;
+    }
+    .footer-links {
+        font-size: 12px;
+        width: 110vw;
+        margin: 0 auto 20px auto;
+        background-color: black;
+        padding-top: 10px;
+    }
+    .location {
+        display: none;
+    }
+    .footer-link {
+        margin-left: 30px;
+        width: 60px;
     }
 }
 
@@ -2404,7 +2397,7 @@ p {
     }
     .main__content p {
         margin-top: -0.2rem;
-        font-size: 6vw;
+        font-size: 5vw;
         font-weight: 400;
         color: #ddd2d2 !important;
     }
@@ -2458,25 +2451,28 @@ p {
         background-attachment: scroll;
         width: 100%;
         overflow-x: hidden;
-        height: 220vh;
+        height: 200vh;
+        padding-bottom: 1vh;
     }
     .service__tag {
         padding: 205px 0;
+        margin-top: -450px;
     }
     .service__tag p {
         color: #000 !important;
         font-size: 22px;
-        margin-top: -255px;
+        margin-top: -300px;
     }
     .service__tag h1 {
         font-size: 30px;
         margin-top: 2px;
     }
     .container-serve {
-        margin-top: -300px;
+        margin-bottom: -300px;
+        margin-top: -450px;
         position: relative;
         width: 100%;
-        padding: 1px 40px 40px 10px;
+        padding: 1px 40px -10px 10px;
         display: grid;
         grid-template-columns: auto;
     }
@@ -2524,27 +2520,30 @@ p {
         display: none;
     }
     .scroll-element {
-        height: 400vh;
+        height: 250vh;
+        background-image: cover;
     }
     .values-description {
-        margin-top: -100px;
-        display: grid;
-        grid-template-columns: auto auto;
-        height: 10vh;
-        padding-top: -100px;
-        justify-content: left;
+        margin-top: 1px;
+        height: 100vh;
+        padding-top: 5px;
+        justify-content: center;
         font-size: 4.85VW;
-        background-image: cover;
     }
     .what-we-have,
     .what-we-offer {
         display: grid;
         grid-template-columns: auto;
-        height: 10vh;
+        margin-top: -400px;
+        height: 100vh;
         row-gap: 40px;
         justify-content: center;
         align-items: center;
         align-content: space-between;
+    }
+    .values-wraper {
+        width: 100%;
+        height: 600vh;
     }
     .values-wraper h1 {
         color: white;
@@ -2552,11 +2551,12 @@ p {
     }
     .values-wraper p {
         font-size: 15px;
+        text-align: center;
     }
     .values {
-        width: 90vw;
-        margin: 900px 900px;
+        width: 100%;
         display: grid;
+        grid-template-columns: auto;
     }
     .values-btn {
         border: none;
@@ -2564,7 +2564,7 @@ p {
         text-decoration: none;
         text-align: center;
         justify-content: center;
-        margin-top: 300px;
+        margin-top: 150px;
     }
     .values-btn a {
         color: black;
@@ -2721,5 +2721,19 @@ p {
         display: flex;
         align-items: center;
         font-size: 12px;
+    }
+    .footer-links {
+        font-size: 12px;
+        width: 110vw;
+        margin: 0 auto 20px auto;
+        background-color: black;
+        padding-top: 10px;
+    }
+    .location {
+        display: none;
+    }
+    .footer-link {
+        margin-left: 30px;
+        width: 60px;
     }
 }
