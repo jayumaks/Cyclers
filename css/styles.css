@@ -679,132 +679,6 @@ img {
     }
 }
 
-.newsimg img {
-    max-width: 100%;
-    height: auto;
-}
-
-.news-content span,
-a,
-a:hover {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-}
-
-.news-section {
-    padding: 90px 90px;
-    width: 100%;
-}
-
-.news-content {
-    padding: 40px 30px;
-}
-
-.news-item {
-    box-shadow: 0 0 15px #ededed;
-    -webkit-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
-    margin-bottom: 40px;
-}
-
-.news-item:hover {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-    -webkit-box-shadow: 0px 15px 15px 0px #edeaea;
-    box-shadow: 0px 15px 15px 0px #edeaea;
-}
-
-.newsimg img {
-    width: 100%;
-}
-
-.news_postdate {
-    color: #FF3A46;
-}
-
-.news-content h3 {
-    color: #233D63;
-    font-size: 22px;
-    margin-bottom: 25px;
-}
-
-.news_authorinfo {
-    border: transparent;
-    padding: 14px 0px 0px 0px;
-    background: transparent;
-    font-size: 14px;
-}
-
-.news_authorinfo i {
-    margin-right: 6px;
-}
-
-.news_authorinfo span:last-child {
-    float: right;
-}
-
-.news_authorinfo a {
-    color: #666;
-}
-
-.center .news-content {
-    background: linear-gradient(-120deg, #8758ff 0, #614ef9 100%);
-}
-
-.center .news-content h3,
-.center .news-content p {
-    color: #fff;
-}
-
-.center .news_authorinfo a,
-.center .news_authorinfo i {
-    color: #fff;
-}
-
-.news-slide.owl-carousel .col-lg-4 {
-    max-width: 100%;
-    padding: 0;
-}
-
-.news-section .owl-theme .owl-nav [class*="owl-"] {
-    color: #333;
-    font-size: 14px;
-    margin: 5px;
-    padding: 4px 7px;
-    background: #fff;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 3px;
-    border: 1px solid #ddd;
-}
-
-.small-title {
-    font-size: 20px;
-    text-transform: capitalize;
-    color: #FF3A46;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    font-weight: 600;
-}
-
-.big-title {
-    letter-spacing: 0px;
-    padding-bottom: 13px;
-    position: relative;
-    color: #233D63;
-    line-height: 50px;
-    font-size: 36px;
-    text-transform: capitalize;
-    font-weight: 600;
-}
-
-.main-title-box {
-    margin-bottom: 60px;
-}
-
 .container-serve {
     margin-top: -100px;
     position: relative;
@@ -1342,7 +1216,7 @@ section .sectio {
 
 #loadMore a {
     background: #feef3c;
-    border-radius: 9px;
+    border-radius: 3px;
     color: #151516;
     display: inline-block;
     padding: 10px 30px;
@@ -1358,6 +1232,14 @@ section .sectio {
 .hidden {
     display: none;
 }
+
+
+/* .team {
+    background-color: #333;
+    height: 200px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+} */
 
 
 /*.team:hover .team-social{
