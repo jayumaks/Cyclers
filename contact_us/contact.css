@@ -114,25 +114,21 @@ body {
 
 .navbar__menu .login-container button {
     float: inline-end;
-    padding: 6px 6 px;
+    padding: 20px 20px;
     margin-top: 8px;
-    margin-right: 6px;
+    margin-right: 16px;
+    justify-content: center;
     background-color: #feef3c;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black !important;
     font-size: 15px;
     border: none;
-    border-radius: 107px;
+    border-radius: 17px;
     cursor: pointer;
-}
-
-.login-container button a {
-    text-decoration: dashed;
-    color: #141414;
+    width: 100%;
 }
 
 .navbar__menu .login-container button:hover {
-    background-color: rgb(15, 16, 15);
+    background-color: #1b1b1b;
     color: white;
 }
 
@@ -161,11 +157,11 @@ body {
 .main__btn a {
     position: relative;
     z-index: 2;
-    color: #bf8484;
+    color: #1b1b1b;
     text-decoration: none;
 }
 
-.main__btn:hover {
+.main__btn :hover {
     color: #fff;
 }
 
