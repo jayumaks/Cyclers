@@ -21,7 +21,7 @@
     position: relative;
     background-size: contain;
     display: block;
-    width: 115%;
+    width: 100%;
     height: 300px;
     -o-object-fit: cover;
     object-fit: cover;
