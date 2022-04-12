@@ -133,6 +133,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
     .navbar__menu .login-container {
         justify-content: center;
         align-items: center;
@@ -549,6 +553,10 @@ button {
 }
 
 @media screen and (max-width: 320px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
     .list-item {
         margin-bottom: 10%;
     }
