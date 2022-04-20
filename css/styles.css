@@ -1674,15 +1674,14 @@ p {
     }
     .navbar__menu {
         width: 100%;
-        height: 110.1vh;
     }
     .navbar__menu .login-container button {
         display: none;
     }
     .slideshow-container {
         height: 90vh;
-        margin-bottom: 1px;
-        margin-top: 1px;
+        margin-bottom: -150px;
+        margin-top: -100px;
     }
     .MessageInfo {
         color: #f2f2f3;
@@ -1729,7 +1728,7 @@ p {
     }
     /* Animation */
     .anim-typewriter {
-        animation: typewriter 5s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+        animation: typewriter 1s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
     }
     @keyframes typewriter {
         from {
@@ -1750,36 +1749,13 @@ p {
     .wave {
         display: none;
     }
-    .art img {
-        height: 500px;
-    }
-    #main__img {
-        margin-top: -50px;
-        margin-bottom: -10px;
-        height: 90%;
-        width: 50%;
-    }
-    @keyframes rotate {
-        0% {
-            display: block;
-        }
-        50% {
-            display: block;
-            transform: rotateY(180deg);
-            transition: ease-in
-        }
-        100% {
-            display: block;
-            transform: rotateY(0);
-        }
-    }
-    .services {
+    section .services {
         overflow-x: hidden;
         width: 100%;
-        padding-bottom: -10000px;
     }
     .services__container {
-        margin-bottom: -400px;
+        margin-top: -200px;
+        padding: auto;
     }
     .service__tag {
         padding: 5px 0 0 0;
@@ -1796,12 +1772,15 @@ p {
     .container-serve {
         position: relative;
         width: 100%;
-        padding: 50px 40px 40px 10px;
+        padding: auto;
     }
     .container-serve .box-serve1 {
         position: relative;
         height: 400px;
         margin-left: 2%;
+    }
+    .box-serve {
+        margin-bottom: -100px;
     }
     .box-serve .content-serve h3 {
         margin: 0 0 10px;
@@ -1853,14 +1832,6 @@ p {
     .values {
         width: 90vw;
         margin: auto;
-    }
-    .values-btn {
-        border: none;
-        width: 40%;
-        text-decoration: none;
-        text-align: center;
-        padding: auto;
-        justify-content: center;
     }
     .values-btn a {
         color: black;
@@ -1995,7 +1966,7 @@ p {
     }
     /* Animation */
     .anim-typewriter {
-        animation: typewriter 5s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+        animation: typewriter 2s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
     }
     @keyframes typewriter {
         from {
@@ -2039,13 +2010,12 @@ p {
         }
     }
     section .services {
-        height: 225vh;
-        background-attachment: scroll;
+        height: 210vh;
         width: 100%;
     }
     .service__tag {
         padding: 5px 0 0 0;
-        margin-top: -500px;
+        margin-top: -10px;
         margin-bottom: -100px;
     }
     .service__tag p {
@@ -2122,7 +2092,7 @@ p {
     }
     .values-btn {
         border: none;
-        width: 40%;
+        width: 3 0%;
         text-decoration: none;
         text-align: center;
         justify-content: center;
@@ -2204,6 +2174,11 @@ p {
         margin-right: auto;
         margin-left: auto;
         margin-top: 50px;
+    }
+    .column {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     #loadMore {
         padding-bottom: 30px;
@@ -2354,8 +2329,7 @@ p {
         background-attachment: scroll;
         width: 100%;
         overflow-x: hidden;
-        height: 200vh;
-        padding-bottom: 1vh;
+        height: 250vh;
     }
     .service__tag {
         padding: 205px 0;
@@ -2371,7 +2345,7 @@ p {
         margin-top: 2px;
     }
     .container-serve {
-        margin-bottom: -300px;
+        margin-bottom: -600px;
         margin-top: -450px;
         position: relative;
         width: 100%;
@@ -2432,6 +2406,10 @@ p {
         padding-top: 5px;
         justify-content: center;
         font-size: 4.85VW;
+    }
+    .values-description p {
+        justify-items: center;
+        justify-content: space-between;
     }
     .what-we-have,
     .what-we-offer {
@@ -2533,6 +2511,11 @@ p {
         margin-right: auto;
         margin-left: auto;
         margin-top: -10px;
+    }
+    .column {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     #loadMore {
         padding-bottom: 30px;
